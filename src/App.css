@@ -1,0 +1,298 @@
+/* App.css */
+
+/* Styles for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+  header {
+    width: 100%;
+    left: 0;
+    padding:15px;
+  }
+  .lowernavbar {
+    width: 100%;
+    left: 0;
+  }
+  .navbar {
+    width: 100%;
+  }
+}
+
+/* Styles for screens between 769px and 1024px (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+    left: 0;
+    padding: 15px;
+  }
+  .lowernavbar {
+    width: 100%;
+    left: 0;
+  }
+  .navbar {
+    width: 100%;
+  }
+}
+
+/* Styles for screens up to 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    left: 0;
+    padding: 15px;
+  }
+  .lowernavbar {
+    width: 100%;
+    left: 0;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .handmade h2 {
+    left: 10px;
+    top: 3px;
+  }
+  .shopbycatogory {
+    width: 90%;
+    left: 5%;
+    font-size: 20px;
+    
+  }
+  .catogoriesitems {
+    top: 94%;
+  }
+  .undertext {
+    top: 335%;
+  }
+}
+
+#root {
+  height: 311.34vh;
+  text-align: center;
+  /* overflow: hidden; */
+}
+*{margin:0px; padding: 0px; box-sizing:border-box;
+background-color: white;}
+header{
+  width: 120%; 
+  /* height:52px; */
+  padding: 13px;
+  position: absolute;
+  /* left: -190px; */
+  border: 0.1px solid rgb(225, 220, 220) ;
+  top: 0px;
+  border-top-color: rgb(8, 211, 211);
+  border-top-width:6px;
+
+}
+.lowernavbar{
+  position: absolute;
+  top: 70px;
+  height: 50px;
+  width:1519px;
+  background-color: rgba(55, 55, 80, 0.395);
+}
+.navbar{
+  width: 1519px;
+  height: 72px;
+  background-color: rgb(21, 20, 20);
+  display: inline-block;
+}
+.box{
+  background-color: azure;
+  height: 20px;
+  width: 20px;
+  padding: 30px;
+  margin: 10px;
+}
+
+header ul{
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500; 
+}
+header li{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 1px 1px 4px;
+  padding: 5px 75px 5px 5px;
+  transition: color 0.3s;
+
+}
+header li:hover{
+  color: rgb(8, 211, 211);
+  /* text-decoration: underline; */
+  cursor: pointer;
+}
+.handmade{
+  height:52px;
+  width:200px;
+  color: black;
+  position:absolute;
+  top:17.3%;
+  left: 0px;
+  border: 0.1px solid rgb(225, 220, 220) ;
+  text-align: center;
+  border-top-color:rgb(8, 211, 211) ;
+  border-top-width: 6px;
+}
+.handmade h2{
+  position: absolute;
+  left: 50px;
+  top: 3px;
+  color: rgb(8, 211, 211);
+}
+.mothersdaygift{
+  position: absolute;
+  height: 40px;
+  width: 97%;
+  top: 200px;
+  left: 25px;
+  background-color: black;
+  background-size: cover;
+}
+.mothersdaygift img{
+  width: 100%;
+}
+.primeligible{
+  width: 97%;
+  height: 230px;
+  background-color: black;
+  position: absolute;
+  top: 270px;
+  left: 25px;
+  background-size: cover;
+}
+.primeligible img{
+  width: 100%;
+  height: 230px;
+}
+.shopbycatogory{
+  height: 50px;
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  top: 530px;
+  left: 40%;
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+
+}
+.shopbycatogory:hover{
+  color: rgb(8, 211, 211);
+  text-decoration: underline;
+}
+.catogoriesitems{
+  height: 51.54vh;
+  width: 97%;
+  background-color: white;
+  position: absolute;
+  top: 87%;
+  left: 1%;
+}
+.catogoriesitems , .box{
+  display: inline-block;
+  background-size: cover;
+  
+}
+.boxs{
+  height: 26.80vh;
+  width: 12.5vw;
+  background-color: aquamarine;
+  display: inline-block;
+  margin: 1.1px 10px 60px 11px;
+  
+}
+.boxs:first-child{
+  background-image: url('src/images/jewellery.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(2){
+  background-image: url('src/images/home decor.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(3){
+  background-image: url('src/images/kitchen and dinning.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(4){
+  background-image: url('src/images/beauty and grooming.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(5){
+  background-image: url('src/images/pet.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(6){
+  background-image: url('src/images/handbags and totes.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(7){
+  background-image: url('src/images/stationary and party.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(8){
+  background-image: url('src/images/clothing and accesrories.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(9){
+  background-image: url('src/images/toys and games.jpg');
+  background-size: cover;
+}
+.boxs:nth-child(10){
+  background-image: url('src/images/baby.jpg');
+  background-size: cover;
+}
+.editorspick{
+  height: 10.3vh;
+  width: 15.625vw;
+  background-color: white;
+  position: absolute;
+  top: 1260px;
+  left: 39.5%;
+  color: black;
+  font-size: 38px;
+  font-weight: 600;
+}
+.editorspick p:hover{
+  color:rgb(8, 211, 211);
+  text-decoration: underline;
+}
+.editorspickitems{
+  background-color: white;
+  height: 61.85vh;
+  width: 99%;
+  position: absolute;
+  top: 200%;
+  left: 0.3%;
+  display: inline-block;
+}
+.editorspickitems div{
+  display: inline-block;
+  padding: 2px;
+  height: 56.70;
+  width: 20.83vw;
+  margin: 13px;
+  background-color: azure;
+}
+.newarrival{
+  background-image: url('src/images/new arrival.jpg');
+  background-size: cover;
+}
+.bestseller{
+  background-image: url('src/images/best seller.jpg');
+  background-size: cover;
+}
+.madeinusa{
+  background-image: url('src/images/made in usa.jpg');
+  background-size: cover;
+}
+.undertext {
+  background-color: black;
+  height: 3.092vh;
+  width: 90%;
+  position: absolute;
+  top: 290%;
+  left: 6%;
+}
+
