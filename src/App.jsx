@@ -8,19 +8,7 @@ function App() {
 
   return (
     <>
-      {/* <div className='navbar'>
-        <div className='box'></div>
-        <div className='box'></div>
-        <div className='box'></div>
-        <div className='box'></div>
-        <div className='box'></div>
-        <div className='box'></div>
-
-
-      </div> */}
-
-
-      <header>
+    <header>
         <div className='header'>
           <ul>
             <li>Gifts</li>
@@ -30,14 +18,12 @@ function App() {
             <li>Wedding</li>
           </ul>
         </div>
+        <img  className="logo" src={'src/images/Screenshot 2024-04-19 171738.png'}/>
       </header>
-      {/* <div className='handmade'>
-        <h2>handmade</h2>
-      </div> */}
       {/* header section is finished here */}
 
       <div className='mothersdaygift'>
-        <img src={'src/images/MD_2024_57_Landing_DesktopReciprocal_MDGeneral_1500x50.jpg'} />
+        <img src={'CraftVine\src\images\Screenshot 2024-04-19 171738.png'} />
       </div>
       <div className='primeligible'>
         <img src={'src/images/prime eligible products.jpg'} />

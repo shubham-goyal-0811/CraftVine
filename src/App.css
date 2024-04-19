@@ -1,112 +1,38 @@
-/* App.css */
-
-/* Styles for screens larger than 1024px */
-@media screen and (min-width: 1025px) {
-  header {
-    width: 100%;
-    left: 0;
-    padding:15px;
-  }
-  .lowernavbar {
-    width: 100%;
-    left: 0;
-  }
-  .navbar {
-    width: 100%;
-  }
-}
-
-/* Styles for screens between 769px and 1024px (tablets) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  header {
-    width: 100%;
-    left: 0;
-    padding: 15px;
-  }
-  .lowernavbar {
-    width: 100%;
-    left: 0;
-  }
-  .navbar {
-    width: 100%;
-  }
-}
-
-/* Styles for screens up to 768px (mobile devices) */
-@media screen and (max-width: 768px) {
-  header {
-    width: 100%;
-    left: 0;
-    padding: 15px;
-  }
-  .lowernavbar {
-    width: 100%;
-    left: 0;
-  }
-  .navbar {
-    width: 100%;
-  }
-  .handmade h2 {
-    left: 10px;
-    top: 3px;
-  }
-  .shopbycatogory {
-    width: 90%;
-    left: 5%;
-    font-size: 20px;
-    
-  }
-  .catogoriesitems {
-    top: 94%;
-  }
-  .undertext {
-    top: 335%;
-  }
-}
-
 #root {
-  height: 311.34vh;
+  height: 3020px;
   text-align: center;
-  /* overflow: hidden; */
 }
 *{margin:0px; padding: 0px; box-sizing:border-box;
 background-color: white;}
 header{
-  width: 120%; 
-  /* height:52px; */
+  width: 100%; 
   padding: 13px;
+  padding-left: 20px;
   position: absolute;
-  /* left: -190px; */
   border: 0.1px solid rgb(225, 220, 220) ;
-  top: 0px;
-  border-top-color: rgb(8, 211, 211);
-  border-top-width:6px;
+  border-bottom-color: rgb(8, 211, 211);
+  border-bottom-width:6px;
 
 }
-.lowernavbar{
+.logo {
+  height: 58px;
+  width: 70px;
   position: absolute;
-  top: 70px;
-  height: 50px;
-  width:1519px;
-  background-color: rgba(55, 55, 80, 0.395);
+  left: 40px
+  ;
+  top: 0px;
+  transition: transform 0.3s, opacity 0.3s; /* Add transition for smooth animation */
 }
-.navbar{
-  width: 1519px;
-  height: 72px;
-  background-color: rgb(21, 20, 20);
-  display: inline-block;
-}
-.box{
-  background-color: azure;
-  height: 20px;
-  width: 20px;
-  padding: 30px;
-  margin: 10px;
+
+.logo:hover {
+  transform: scale(1.1); /* Increase the size of the logo by 10% */
+  opacity: 0.8; /* Reduce the opacity of the logo to 80% */
 }
 
 header ul{
+  padding: 2px;
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500; 
 }
 header li{
@@ -115,14 +41,16 @@ header li{
   display: inline-block;
   margin: 0px 1px 1px 4px;
   padding: 5px 75px 5px 5px;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 
 }
 header li:hover{
   color: rgb(8, 211, 211);
-  /* text-decoration: underline; */
+  transform: scale(1.06);
+  text-decoration: underline;
   cursor: pointer;
 }
+
 .handmade{
   height:52px;
   width:200px;
@@ -134,12 +62,6 @@ header li:hover{
   text-align: center;
   border-top-color:rgb(8, 211, 211) ;
   border-top-width: 6px;
-}
-.handmade h2{
-  position: absolute;
-  left: 50px;
-  top: 3px;
-  color: rgb(8, 211, 211);
 }
 .mothersdaygift{
   position: absolute;
@@ -166,29 +88,40 @@ header li:hover{
   width: 100%;
   height: 230px;
 }
-.shopbycatogory{
+.shopbycatogory {
   height: 50px;
   width: 300px;
   background-color: white;
   position: absolute;
-  top: 530px;
+  top: 570px;
   left: 40%;
   color: black;
   font-size: 28px;
   font-weight: 500;
+  
+  /* Add the transition property for smooth animations */
+  transition: transform 0.3s, opacity 0.3s;
+}
 
-}
-.shopbycatogory:hover{
+.shopbycatogory:hover {
   color: rgb(8, 211, 211);
-  text-decoration: underline;
+  transform: scale(1.1);
+  opacity: 0.8;
+  text-decoration: underline; 
+  cursor: pointer;
+  
+  /* The transition property above ensures that these changes are animated */
 }
+
 .catogoriesitems{
-  height: 51.54vh;
+  height: 640px;
   width: 97%;
   background-color: white;
   position: absolute;
-  top: 87%;
+  top: 90%;
   left: 1%;
+  flex-wrap: wrap;
+
 }
 .catogoriesitems , .box{
   display: inline-block;
@@ -196,11 +129,11 @@ header li:hover{
   
 }
 .boxs{
-  height: 26.80vh;
-  width: 12.5vw;
+  height: 260px;
+  width: 240px;
   background-color: aquamarine;
   display: inline-block;
-  margin: 1.1px 10px 60px 11px;
+  margin: 11px 10px 20px 11px;
   
 }
 .boxs:first-child{
@@ -244,34 +177,40 @@ header li:hover{
   background-size: cover;
 }
 .editorspick{
-  height: 10.3vh;
-  width: 15.625vw;
+  height: 100px;
+  width: 300px;
   background-color: white;
   position: absolute;
-  top: 1260px;
+  top: 1230px;
   left: 39.5%;
   color: black;
   font-size: 38px;
   font-weight: 600;
+  transition: transform 0.3s, opacity 0.3s;
+
 }
 .editorspick p:hover{
   color:rgb(8, 211, 211);
+  transform: scale(1.1);
+  opacity: 0.8;
   text-decoration: underline;
+  cursor: pointer;
 }
 .editorspickitems{
   background-color: white;
-  height: 61.85vh;
+  height: 600px;
   width: 99%;
   position: absolute;
   top: 200%;
   left: 0.3%;
   display: inline-block;
+  flex-wrap: wrap;
 }
 .editorspickitems div{
   display: inline-block;
   padding: 2px;
-  height: 56.70;
-  width: 20.83vw;
+  height: 550px;
+  width: 400px;
   margin: 13px;
   background-color: azure;
 }
@@ -289,10 +228,9 @@ header li:hover{
 }
 .undertext {
   background-color: black;
-  height: 3.092vh;
+  height: 30px;
   width: 90%;
   position: absolute;
   top: 290%;
   left: 6%;
 }
-
