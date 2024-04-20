@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <header>
+      <header>
         <div className='header'>
           <ul>
             <li>Gifts</li>
@@ -18,7 +18,7 @@ function App() {
             <li>Wedding</li>
           </ul>
         </div>
-        <img  className="logo" src={'src/images/Screenshot 2024-04-19 171738.png'}/>
+        <img className="logo" src={'src/images/Screenshot 2024-04-19 171738.png'} />
       </header>
       {/* header section is finished here */}
 
@@ -54,13 +54,24 @@ function App() {
         <div className='newarrival'></div>
         <div className='bestseller'></div>
         <div className='madeinusa'></div>
-        </div>
+      </div>
 
-        <div className='undertext'>
-          <a href="#">New Arrival</a>
-          <a href="#">Best Seller</a>
-          <a href="#">Made in USA</a>
-        </div>
+      <div className='undertext'>
+        <a href="#">New Arrival</a>
+        <a href="#">Best Seller</a>
+        <a href="#">Made in USA</a>
+      </div>
+
+      {/* footer section begins */}
+
+      <div className='followus'>
+        <h2>Follow Us</h2>
+        <p>For the newest collections and one-of-a-kind gifts on Crafts Vine made</p>  
+      </div>
+
+      <div className='contactlogo'>
+        <a href=""><img src={'src/images/android-chrome-192x192-removebg-preview.png'}></img></a>
+      </div>
     </>
   )
 }
