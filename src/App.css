@@ -1,139 +1,161 @@
-#root {
-  height: 3020px;
-  text-align: center;
+#root{
+  width: 100%;
 }
-*{margin:0px; padding: 0px; box-sizing:border-box;
-background-color: white;}
-header{
-  width: 100%; 
-  padding: 13px;
-  padding-left: 20px;
-  position: absolute;
-  border: 0.1px solid rgb(225, 220, 220) ;
-  border-bottom-color: rgb(8, 211, 211);
-  border-bottom-width:6px;
-
-}
-.logo {
-  height: 58px;
-  width: 70px;
-  position: absolute;
-  left: 40px
-  ;
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+  background-color: whitesmoke;
+  box-shadow: 1px 2px 10px rgb(185, 183, 183);
+  z-index: 2;
+  position: sticky;
   top: 0px;
-  transition: transform 0.3s, opacity 0.3s; /* Add transition for smooth animation */
+  left: 0;
 }
-
-.logo:hover {
-  transform: scale(1.1); /* Increase the size of the logo by 10% */
-  opacity: 0.8; /* Reduce the opacity of the logo to 80% */
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-header ul{
-  padding: 2px;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 500; 
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
 }
-header li{
-  color: rgb(0, 0, 0);
+#navbar li a{
   text-decoration: none;
-  display: inline-block;
-  margin: 0px 1px 1px 4px;
-  padding: 5px 75px 5px 5px;
-  transition: color 0.3s, transform 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  color:black;
+  transition: 0.3s ease;
 
 }
-header li:hover{
-  color: rgb(8, 211, 211);
-  transform: scale(1.06);
-  text-decoration: underline;
+#navbar li a:hover{
+  color:rgb(25, 197, 197);
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: rgb(25, 197, 197);
+}
+/* adding pseudo element */
+#navbar li a.active::after,  
+#navbar li a:hover::after{
+  content:"";
+  width: 27%;
+  height: 2px;
+  background-color: rgb(25, 197, 197);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+/* landing page css begins */
+#discount {
+  height: 90vh;
+  width: 97.3%;
+  background-image: linear-gradient(90deg, rgba(12, 12, 12, 0.5) 10%, hsla(60, 100%, 1%, 0.3)100%), url('src/images/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image within the section */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+  padding: 0px 20px; /* Optional: add padding around the section */
+}
+
+#discount h4{
+  padding-bottom: 0px;
+  padding: 0px 80px;
+  color: white;
+  font-size: 30px;
+  margin-bottom: -20px;
+}
+#discount h1{
+  color:aqua ;
+  font-size:45px ;
+  padding: 0px 80px;
+}
+#discount h2{
+  font-size: 35px;
+  padding: 0px 80px;
+  color: white;
+  margin-bottom: 1px;
+}
+#discount button{
+  background-image: url('src/images/button.png');
+  background-color:transparent;
+  color:aqua;
+  border: 0px;
+  padding: 14px 60px 34px 75px;
+  margin: 45px;
+  margin-top: 3px;
+  background-repeat: no-repeat;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+#discount p{
+  padding: 0px 80px;
+  color: white;
+  font-size: 20px;
 }
 
-.handmade{
-  height:52px;
-  width:200px;
-  color: black;
-  position:absolute;
-  top:17.3%;
-  left: 0px;
-  border: 0.1px solid rgb(225, 220, 220) ;
+#discount h4,
+#discount h1,
+#discount h2,
+#discount p {
+    /* Reduce horizontal padding (left and right) */
+    padding: 0px 100px;
+    /* You can adjust the above value as desired. Lower numbers mean less horizontal padding */
+}
+
+#discount h4 {
+    /* Optionally reduce vertical padding (bottom) */
+    padding-bottom: 0px;
+}
+
+#discount h1,
+#discount h2 {
+    /* Optionally reduce vertical padding */
+    margin-bottom: 1px; /* You can adjust the spacing between headings as desired */
+}
+
+#discount p {
+    /* Adjust the spacing between the paragraph and the heading above */
+    margin-top: 10px; /* Adjust as needed */
+}
+section{
+  background-color: white;
+  padding:80px;
   text-align: center;
-  border-top-color:rgb(8, 211, 211) ;
-  border-top-width: 6px;
 }
-.mothersdaygift{
-  position: absolute;
-  height: 40px;
-  width: 97%;
-  top: 200px;
-  left: 25px;
-  background-color: black;
-  background-size: cover;
-}
-.mothersdaygift img{
-  width: 100%;
-}
-.primeligible{
-  width: 97%;
-  height: 230px;
-  background-color: black;
-  position: absolute;
-  top: 270px;
-  left: 25px;
-  background-size: cover;
-}
-.primeligible img{
-  width: 100%;
-  height: 230px;
-}
-.shopbycatogory {
-  height: 50px;
-  width: 300px;
-  background-color: white;
-  position: absolute;
-  top: 570px;
-  left: 40%;
+ .head{
   color: black;
-  font-size: 28px;
-  font-weight: 500;
-  
-  /* Add the transition property for smooth animations */
-  transition: transform 0.3s, opacity 0.3s;
+  font-size: 35px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.head:hover{
+  color:rgb(25, 197, 197) ;
+  text-decoration: underline;
+}
+.catogoriesitems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 50px; /* Adjust the gap between grid items as needed */
+  justify-content: center; /* Centers the grid items horizontally */
+  align-items: center; /* Centers the grid items vertically */
+  padding: 20px; /* Optional: add padding around the grid container */
+  text-align: center;
 }
 
-.shopbycatogory:hover {
-  color: rgb(8, 211, 211);
-  transform: scale(1.1);
-  opacity: 0.8;
-  text-decoration: underline; 
-  cursor: pointer;
-  
-  /* The transition property above ensures that these changes are animated */
-}
-
-.catogoriesitems{
-  height: 640px;
-  width: 97%;
-  background-color: white;
-  position: absolute;
-  top: 90%;
-  left: 1%;
-  flex-wrap: wrap;
-
-}
-.catogoriesitems , .box{
-  display: inline-block;
-  background-size: cover;
-  
-}
-.boxs{
+.catogoriesitems .boxs{
   height: 260px;
-  width: 240px;
+  width: 290px;
   background-color: aquamarine;
-  display: inline-block;
-  margin: 11px 10px 20px 11px;
+  margin: 50px -10px 1px 11px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
 .boxs:first-child{
@@ -152,23 +174,20 @@ header li:hover{
   background-image: url('src/images/beauty and grooming.jpg');
   background-size: cover;
 }
+
 .boxs:nth-child(5){
-  background-image: url('src/images/pet.jpg');
-  background-size: cover;
-}
-.boxs:nth-child(6){
   background-image: url('src/images/handbags and totes.jpg');
   background-size: cover;
 }
-.boxs:nth-child(7){
+.boxs:nth-child(6){
   background-image: url('src/images/stationary and party.jpg');
   background-size: cover;
 }
-.boxs:nth-child(8){
+.boxs:nth-child(7){
   background-image: url('src/images/clothing and accesrories.jpg');
   background-size: cover;
 }
-.boxs:nth-child(9){
+.boxs:nth-child(8){
   background-image: url('src/images/toys and games.jpg');
   background-size: cover;
 }
@@ -176,126 +195,221 @@ header li:hover{
   background-image: url('src/images/baby.jpg');
   background-size: cover;
 }
-.editorspick{
-  height: 100px;
-  width: 300px;
-  background-color: white;
-  position: absolute;
-  top: 1230px;
-  left: 39.5%;
+.boxs:hover{
+  transform: translateY(-10px); /* Moves the element up by 10px */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a box shadow on hover */
+}
+.boxs a{
   color: black;
-  font-size: 38px;
-  font-weight: 600;
-  transition: transform 0.3s, opacity 0.3s;
+  position: relative;
+  top: 270px;
+}
+.boxs a:hover{
+  color:rgb(25, 197, 197);
 
 }
-.editorspick p:hover{
-  color:rgb(8, 211, 211);
-  transform: scale(1.1);
-  opacity: 0.8;
-  text-decoration: underline;
-  cursor: pointer;
+.section{
+  position: relative;
+  top: -40px;
+  background-color: white;
 }
 .editorspickitems{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  gap: 80px; /* Adjust the gap between grid items as needed */
+  justify-content: center; /* Centers the grid items horizontally */
+  align-items: center; /* Centers the grid items vertically */
+  padding: 30px; /* Optional: add padding around the grid container */
+  text-align: center;
   background-color: white;
-  height: 600px;
-  width: 99%;
-  position: absolute;
-  top: 190%;
-  left: 0.3%;
-  display: inline-block;
-  flex-wrap: wrap;
 }
-.editorspickitems div{
-  display: inline-block;
-  padding: 2px;
+
+.arrival{
   height: 550px;
   width: 400px;
-  margin: 13px;
-  background-color: azure;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-.editorspickitems div:hover {
-  transform: scale(1.05);
-  background-color: lightblue;
-}
-.newarrival{
   background-image: url('src/images/new arrival.jpg');
   background-size: cover;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .bestseller{
+  height: 550px;
+  width: 400px;
   background-image: url('src/images/best seller.jpg');
   background-size: cover;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .madeinusa{
+  height: 550px;
+  width: 400px;
   background-image: url('src/images/made in usa.jpg');
   background-size: cover;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.undertext {
-  background-color: white;
-  width: 90%;
-  position: absolute;
-  top: 275%;
-  left: 4%;
-  flex-wrap: wrap;
+.arrival:hover, .bestseller:hover, .madeinusa:hover {
+  transform: scale(1.05); /* Scale the element up slightly */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+.text {
+  color: black;
+  font-size: 34px;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Add transition for color and text-decoration */
 }
 
-.undertext a{
-  padding: 10px;
-  margin: 152px;
+.text:hover {
+  color: rgb(25, 197, 197);
+  text-decoration: underline;
+}
+
+.arrival a, .bestseller a, .madeinusa a{
+  color: black;
+  position: relative;
+  top: 570px;
   font-size: 21px;
-  color: black;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  
 }
-.undertext a:hover{
-  color:rgb(8, 211, 211);
-  transform: scale(1.05);
-  text-decoration: underline;
+.arrival a:hover, .bestseller a:hover, .madeinusa a:hover {
+  color: rgb(25, 197, 197);
 }
-.followus{
-  height: 50%;
-  width: 75%;
+
+section{
   background-color: white;
-  position: absolute;
-  top: 290%;
-  left:180px;
+}
+#signup{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("src/images/Deep Ocean Dark Teal Printed Solid.jpg");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: rgb(12, 67, 67);
+  padding: 0px 90px;
+  background-size:cover ;
+
+}
+#signup h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+#signup p{
+  position: relative;
+  bottom: 19px;
+  font-size:14px;
+  font-weight: 600;
+  color: white;
+}
+#signup p span{
+  color: aqua;
+}
+.form{
+  display: flex;
+  width: 40%;
+}
+#signup input{
+  height: 3.125rem;
+  padding: 0px 1.25em;
+  font-size: 14px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid transparent;
   color: black;
-}
-.followus h2{
-  position: absolute;
-  width: 20%;
-  padding: 12px;
-  top: 18px;
-  left: 39%;
-  font-size: 36px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-
-}
-.followus h2:hover{
-  color:rgb(8, 211, 211);
-  transform: scale(1.05);
-  text-decoration: underline;
-
-}
-.followus p{
-  position: absolute;
-  top: 110px;
-  left:24%;
-  font-size: 20px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-.followus p:hover{
-  color:rgb(8, 211, 211);
-  transform: scale(1.05);
-  text-decoration: underline;
-}
-.contactlogo{
-  height: 10px;
-  width: 10px;
+  border-radius: 4px;  
+  outline: none;
+  border-top-right-radius:0px;
+  border-bottom-right-radius:0px;
   
 }
-.contactlogo img{
-  background-size: cover;
+#signup button{
+  background-color:#088178 ;
+  color: white;
+  white-space: nowrap;
+  border-top-left-radius:0px;
+  border-bottom-left-radius:0px;
 }
+footer{
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-between;
+}
+footer .col{
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+footer .lowelogo{
+  margin-bottom: 38px;
+}
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p{
+  font-size: 13px;
+  padding-bottom: 20px;
+  margin: 0 0 8px 0;
+}
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
 
+}
+footer .followus{
+  margin-top: 20px;
+
+}
+footer .followus .icon{
+  color: black;
+  padding-right: 4px;
+  cursor: pointer;
+
+  
+}
+.col img{
+  height: 90px;
+  width: 90px;
+}
+.col{
+  padding: 50px 90px;
+}
+.row img{
+  background-size: cover;
+  height: 30px;
+}
+.col h4{
+  position: relative;
+  top: -40px;
+}
+.col p{
+  position: relative;
+  top: -60px;
+}
+.followus h3{
+  position: relative;
+  top: -90px;
+}
+.icon{
+  position: relative;
+  top: -90px;
+}
+.col h6{
+  font-size: 13px;
+}
+.colinstall h2{
+  font-size: 14px;
+}
+.colinstall{
+  position: relative;
+  top: 64px;
+  left: -20px;
+}
+*{
+  background-color: white;
+}
