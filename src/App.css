@@ -1,6 +1,7 @@
 #root{
   width: 100%;
 }
+
 #header{
   display: flex;
   align-items: center;
@@ -12,6 +13,10 @@
   position: sticky;
   top: 0px;
   left: 0;
+}
+#header img{
+  height: 50px;
+  width: 70px;
 }
 #navbar{
   display: flex;
@@ -375,7 +380,7 @@ footer .followus .icon{
 }
 .col img{
   height: 90px;
-  width: 90px;
+  width: 110px;
 }
 .col{
   padding: 50px 90px;
@@ -390,15 +395,16 @@ footer .followus .icon{
 }
 .col p{
   position: relative;
-  top: -60px;
+  top: -70px;
 }
 .followus h3{
   position: relative;
-  top: -90px;
+  top: -110px;
 }
 .icon{
   position: relative;
-  top: -90px;
+  top: -110px;
+  padding: 1px;
 }
 .col h6{
   font-size: 13px;
@@ -406,11 +412,16 @@ footer .followus .icon{
 .colinstall h2{
   font-size: 14px;
 }
-.colinstall{
+#colinstall{
   position: relative;
-  top: 64px;
   left: -20px;
 }
+<<<<<<< HEAD
 *{
   /* background-color: white; */
+=======
+.section1 a:hover{
+  color: #1aa69d;  
+  text-decoration: underline;
+>>>>>>> a3211d0f0adb31d961213f68f96a18786a533f22
 }
