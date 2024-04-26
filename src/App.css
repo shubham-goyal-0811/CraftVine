@@ -56,8 +56,8 @@
 }
 /* landing page css begins */
 #discount {
-  height: 90vh;
-  width: 97.3%;
+  height: 75vh;
+  width: 97.16vw;
   background-image: linear-gradient(90deg, rgba(12, 12, 12, 0.5) 10%, hsla(60, 100%, 1%, 0.3)100%), url('src/images/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
   background-size: cover; /* Ensures the image covers the entire section */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -338,6 +338,7 @@ footer{
   display: flex;
   flex-wrap:wrap ;
   justify-content: space-between;
+  margin: 0;
 }
 footer .col{
   background-color: white;
@@ -415,6 +416,8 @@ footer .followus .icon{
   position: relative;
   left: -20px;
 }
+*{
+  /* background-color: white; */
 .section1 a:hover{
   color: #1aa69d;  
   text-decoration: underline;
