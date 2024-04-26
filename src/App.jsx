@@ -3,21 +3,22 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faIntercom } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <section id="header">
-        <a href="#"><img src={'iScreenshot 2024-04-19 171738.png'} /></a>
+        <a href="#"><img src={'src/images/craftVine-logo-removebg-preview (1).png'} /></a>
         <div>
           <ul id="navbar">
             <li><a href="#" className='active'>Home</a></li>
-            <li><a href="#catogoriesitems">Shop</a></li>
-            <li><a href="#">Kitchen</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Cart</a></li>
+            <li><a href="#catogoriesitems">Shop By Catogory</a></li>
+            <li><a href="#editorpick">Editor's Pick</a></li>
+            <li><a href="#signup">Contact Us</a></li>
             <li><a href="#catogoriesitems">Login & Sign-up</a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a></li>
           </ul>
         </div>
       </section>
@@ -31,7 +32,7 @@ function App() {
 
       </section>
 
-      <section>
+      <section id="catogoriesitems">
         <a className="head" href="#">Shop By Catogory</a>
         <div className='catogoriesitems'>
           <div className='boxs'>
@@ -62,7 +63,7 @@ function App() {
       </section>
 
       {/* middle section begins */}
-      <section>
+      <section id="editorpick">
         <a className="text" href="#">Editor's Pick</a>
         <div className='editorspickitems'>
           <div className='arrival'>
@@ -94,11 +95,14 @@ function App() {
 
       <footer className='section1'>
         <div className='col'>
-          <img  className="lowelogo" src={'src/images/craftVine-logo-removebg-preview (1).png'} />
+          <img className="lowelogo" src={'src/images/craftVine-logo-removebg-preview (1).png'} />
           <h4>Contact</h4>
-          <p><strong>Address:</strong>asdfghjkl</p>
-          <p><strong>Phone No:</strong>asdfghjkl</p>
-          <p><strong>Hours:</strong>asdfghjkl</p>
+          <p><strong>Address:</strong>123 Sector 20
+            Uttam Market
+            Chandigarh - 160020
+            India </p>
+          <p><strong>Phone No:</strong> 9056110958 , 8847604059 </p>
+          <p><strong>Hours:</strong> Monday to Saturday b/w <strong>9 to 5</strong></p>
 
           <div className='followus'>
             <h3>Follow Us</h3>
@@ -124,14 +128,15 @@ function App() {
           <a href="#">Sign In</a>
           <a href="#">View Cart</a>
           <a href="#">Track My Order</a>
+          <a href="#">Become a Seller</a>
           <a href="#">Help</a>
         </div>
-        <div className='colinstall'>
+        <div id='colinstall'>
           <h2>Install App</h2>
           <p>From App Store or Google Play</p>
           <div className='row'>
-            <img src={'src/images/png-clipart-app-store-google-play-apple-apple-text-logo.png'} alt=""/>
-            <img src={'src/images/png-clipart-app-store-google-play-apple-apple-text-logo.png'} alt=""/>
+            <img src={'src/images/png-clipart-app-store-google-play-apple-apple-text-logo.png'} alt="" />
+            <img src={'src/images/png-clipart-app-store-google-play-apple-apple-text-logo.png'} alt="" />
           </div>
         </div>
       </footer>
