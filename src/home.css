@@ -1,6 +1,9 @@
 #root{
   width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+ }
 
 #header{
   display: flex;
@@ -38,6 +41,7 @@
 }
 #navbar li a:hover{
   color:rgb(25, 197, 197);
+  transition: 0.3s ease;
 }
 #navbar li a:hover,
 #navbar li a.active{
@@ -56,8 +60,12 @@
 }
 /* landing page css begins */
 #discount {
+<<<<<<< HEAD:src/App.css
   height: 75vh;
   width: 97.16vw;
+=======
+  height: 90vh;
+>>>>>>> bc0288966cdd43f272a9b6b99f550e817132407b:src/home.css
   background-image: linear-gradient(90deg, rgba(12, 12, 12, 0.5) 10%, hsla(60, 100%, 1%, 0.3)100%), url('src/images/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
   background-size: cover; /* Ensures the image covers the entire section */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -67,7 +75,7 @@
   align-items: flex-start;
   justify-content: center;
   z-index: 1;
-  padding: 0px 20px; /* Optional: add padding around the section */
+  padding: 0px 10px; /* Optional: add padding around the section */
 }
 
 #discount h4{
@@ -380,7 +388,7 @@ footer .followus .icon{
 }
 .col img{
   height: 90px;
-  width: 110px;
+  width: 90px;
 }
 .col{
   padding: 50px 90px;
@@ -412,13 +420,37 @@ footer .followus .icon{
 .colinstall h2{
   font-size: 14px;
 }
-#colinstall{
+.colinstall{
   position: relative;
+  top: 64px;
   left: -20px;
 }
+<<<<<<< HEAD:src/App.css
 *{
   /* background-color: white; */
 .section1 a:hover{
   color: #1aa69d;  
   text-decoration: underline;
 }}
+=======
+@media (max-width:799px) {
+    #navbar{
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      height: 100vh;
+      width: 300px;
+      background-color: azure;
+      box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+      padding:80px 0 0 10px ;
+
+    }
+    #navbar li{
+      
+    }
+}
+>>>>>>> bc0288966cdd43f272a9b6b99f550e817132407b:src/home.css
