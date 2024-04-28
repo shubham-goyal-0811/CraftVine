@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-
+import React, { useState } from 'react';
 // new imports
 import {Routes,Route} from 'react-router-dom';
 import home from './home.jsx'

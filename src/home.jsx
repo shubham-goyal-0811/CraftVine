@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faIntercom } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faOutdent, fas } from '@fortawesome/free-solid-svg-icons';
 
 const home = ()=>{
   return (
@@ -14,10 +15,14 @@ const home = ()=>{
             <li><a href="/" className='active'>Home</a></li>
             <li><a href="#catogoriesitems">Shop By Catogory</a></li>
             <li><a href="#editorpicks">Editor's choice</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="">Login & Sign-up</a></li>
+            <li><a href="#section1">Contact</a></li>
+            <li><a href="">Login</a></li>
             <li><a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a></li>
           </ul>
+        </div>
+        <div id="mobile">
+        <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+        <FontAwesomeIcon id="bar" icon={faOutdent} />
         </div>
       </section>
       {/* nav bar ended here */}
@@ -29,9 +34,13 @@ const home = ()=>{
         <button>Shop Now</button>
 
       </section>
+      <section>
+        
+
+      </section>
 
       <section id='catogoriesitems'>
-        <a className="head" href="#">Shop By Catogory</a>
+        <a className="head" href="#catogoriesitems">Shop By Catogory</a>
         <div className='catogoriesitems'>
           <div className='boxs'>
             <a href="/jewellery">Jewellery</a>
@@ -62,7 +71,7 @@ const home = ()=>{
 
       {/* middle section begins */}
       <section id='editorpicks'>
-        <a className="text" href="#">Editor's Pick</a>
+        <a className="text" href="#editorpicks">Editor's Pick</a>
         <div className='editorspickitems'>
           <div className='arrival'>
             <a href="#">Arrival </a>
@@ -91,7 +100,7 @@ const home = ()=>{
 
       {/* footer section begins here  */}
 
-      <footer className='section1'>
+      <footer id='section1'>
         <div className='col'>
           <img  className="lowelogo" src={'src/images/craftVine-logo-removebg-preview (1).png'} />
           <h4>Contact</h4>

@@ -72,6 +72,11 @@ html {
   z-index: 1;
   padding: 0px 10px; /* Optional: add padding around the section */
 }
+#mobile{
+  display: none;
+  color: black;
+
+}
 
 #discount h4{
   padding-bottom: 0px;
@@ -416,7 +421,7 @@ footer .followus .icon{
 }
 .colinstall{
   position: relative;
-  top: 64px;
+  top: 2px;
   left: -20px;
 }
 @media (max-width:799px) {
@@ -435,7 +440,38 @@ footer .followus .icon{
       padding:80px 0 0 10px ;
 
     }
+    #navbar.active{
+      right: 0px;
+    }
     #navbar li{
+      margin-bottom: 25px;
+    }
+    #mobile{
+      display: flex;
+      align-items: center;
       
+    }
+    #mobile #bar{
+      color: black;
+      font-size: 16px;
+      padding-left:15px;
+      cursor: pointer;
+      
+    }
+    #mobile a{
+      color: black;
+      cursor: pointer;
+    }
+    .editorspickitems{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+      gap: 80px; /* Adjust the gap between grid items as needed */
+      justify-content: center; /* Centers the grid items horizontally */
+      align-items: center; /* Centers the grid items vertically */
+      padding: 30px; /* Optional: add padding around the grid container */
+      text-align: center;
+      background-color: white;
+      flex-wrap: wrap;
+      overflow: hidden;
     }
 }
