@@ -2,7 +2,7 @@ import './home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faIntercom } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faOutdent, fas } from '@fortawesome/free-solid-svg-icons';
 
 const home = ()=>{
@@ -34,9 +34,141 @@ const home = ()=>{
         <button>Shop Now</button>
 
       </section>
-      <section>
-        
-
+      <section id="product">
+        <h2>
+          Featured Porducts
+        </h2>
+        <p>Summer Collection New Modern Design</p>
+        <div className='pro-container'>
+          <div className='pro'>
+            <img src={'src/images/jewe.jpg'}alt="" />
+            <div className='des'>
+              <span>Jewellery</span>
+              <h5>Zirconia Stacking Rings Prom Wedding Bridal Finger Jewelry Gift for Her</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+          <div className='pro'>
+            <img src={'src/images/decor1.jpg'}alt="" />
+            <div className='des'>
+              <span>Home Décor</span>
+              <h5>Lightening</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+          <div className='pro'>
+            <img src={'src/images/kitchen 1.jpg'}alt="" />
+            <div className='des'>
+              <span>Kitchen & Dinning</span>
+              <h5>CookWare</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+          <div className='pro'>
+            <img src={'src/images/beauty 1.jpg'}alt="" />
+            <div className='des'>
+              <span>Beauty & Grooming</span>
+              <h5>Beauty Sets</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+          <div className='pro'>
+            <img src={'src/images/kitchen and.jpg'}alt="" />
+            <div className='des'>
+              <span>Kitchen & Dinning</span>
+              <h5>Cups & Mugs</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+          <div className='pro'>
+            <img src={'src/images/personalized.jpg'}alt="" />
+            <div className='des'>
+              <span>Stationery & Party Supplies</span>
+              <h5>Personalized Hockey Stationery - Set of 12 Flat Notecards & Envelopes</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+          <div className='pro'>
+            <img src={'src/images/toys.jpg'}alt="" />
+            <div className='des'>
+              <span>Toys</span>
+              <h5>Baby & Toddler Toys</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+          <div className='pro'>
+            <img src={'src/images/clothing.jpg'}alt="" />
+            <div className='des'>
+              <span>Clothing</span>
+              <h5>Mens T-shirt</h5>
+              <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              </div>
+              <h4>Rs.55,000</h4>
+            </div>
+            <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+          </div>
+        </div>
       </section>
 
       <section id='catogoriesitems'>
@@ -71,7 +203,7 @@ const home = ()=>{
 
       {/* middle section begins */}
       <section id='editorpicks'>
-        <a className="text" href="#editorpicks">Editor's Pick</a>
+        <a className="text "  href="#editorpicks">Editor's Pick</a>
         <div className='editorspickitems'>
           <div className='arrival'>
             <a href="#">Arrival </a>

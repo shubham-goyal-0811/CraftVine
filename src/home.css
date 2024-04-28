@@ -139,6 +139,74 @@ html {
     /* Adjust the spacing between the paragraph and the heading above */
     margin-top: 10px; /* Adjust as needed */
 }
+#product{
+  color: black;
+  text-align: center;
+}
+#product .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 2px solid rgb(203, 211, 211);
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  margin: 15px 0;
+  transition: 0.3s ease;
+  position: relative;
+
+}
+#product .pro:hover{
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.07);
+}
+#product .pro img{
+  width: 100%;
+  border-radius: 20px;
+}
+#product .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+#product .pro .des span{
+  color: grey;
+  font-size: 12px;
+}
+#product .pro .des h5{
+  padding-top: 7px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+.star .fa-star {
+  color: rgb(255, 211, 100);
+}
+#product .pro .des h4{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0db6ab;
+}
+#product .pro a{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: rgba(240, 248, 255, 0.781);
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+#product .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+
+}
+
 section{
   background-color: white;
   padding:80px;
@@ -287,6 +355,7 @@ section{
   background-color: white;
 }
 #signup{
+  height: 140px;
   display: flex;
   color: white;
   justify-content: space-between;
@@ -307,7 +376,6 @@ section{
 }
 #signup p{
   position: relative;
-  bottom: 19px;
   font-size:14px;
   font-weight: 600;
   color: white;
@@ -320,7 +388,7 @@ section{
   width: 40%;
 }
 #signup input{
-  height: 3.125rem;
+  height: 3.135rem;
   padding: 0px 1.25em;
   font-size: 14px;
   width: 100%;
@@ -399,7 +467,7 @@ footer .followus .icon{
 }
 .col h4{
   position: relative;
-  top: -40px;
+  top: -30px;
 }
 .col p{
   position: relative;
@@ -419,6 +487,16 @@ footer .followus .icon{
 }
 .colinstall h2{
   font-size: 14px;
+  position: relative;
+  top: 40px;
+}
+.colinstall p{
+  position: relative;
+  top: 50px;
+}
+.colinstall img{
+  position: relative;
+  top: 30px;
 }
 .colinstall{
   position: relative;
