@@ -4,7 +4,6 @@ import { faFacebook, faIntercom } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faOutdent, fas } from '@fortawesome/free-solid-svg-icons';
-
 const home = ()=>{
   return (
     <>
@@ -12,7 +11,8 @@ const home = ()=>{
         <a href="#"><img src={'src/images/craftVine-logo-removebg-preview (1).png'} /></a>
         <div>
           <ul id="navbar">
-            <li><a href="/" className='active'>Home</a></li>
+            <li><a href="#header" className='active'>Home</a></li>
+            <li><a href="#product">Featured Products</a></li>
             <li><a href="#catogoriesitems">Shop By Catogory</a></li>
             <li><a href="#editorpicks">Editor's choice</a></li>
             <li><a href="#section1">Contact</a></li>
@@ -36,9 +36,9 @@ const home = ()=>{
       </section>
       <section id="product">
         <h2>
-          Featured Porducts
+          Featured Products
         </h2>
-        <p>Summer Collection New Modern Design</p>
+        <p className='ptag'>Summer Collection New Modern Design</p>
         <div className='pro-container'>
           <div className='pro'>
             <img src={'src/images/jewe.jpg'}alt="" />
@@ -52,15 +52,15 @@ const home = ()=>{
               <FontAwesomeIcon icon={faStar} />
               <FontAwesomeIcon icon={faStar} />
               </div>
-              <h4>Rs.55,000</h4>
+              <h4>Rs. 55,000</h4>
             </div>
             <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
           </div>
           <div className='pro'>
             <img src={'src/images/decor1.jpg'}alt="" />
             <div className='des'>
-              <span>Home Décor</span>
-              <h5>Lightening</h5>
+              <span>Lightening</span>
+              <h5>Tiffany Style Stained Glass Ceiling Pendant Light Fixture with 13 Inch Wide Handmade</h5>
               <div className='star'>
               <FontAwesomeIcon icon={faStar} />
               <FontAwesomeIcon icon={faStar} />
@@ -68,15 +68,15 @@ const home = ()=>{
               <FontAwesomeIcon icon={faStar} />
               <FontAwesomeIcon icon={faStar} />
               </div>
-              <h4>Rs.55,000</h4>
+              <h4>Rs. 5,000</h4>
             </div>
             <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
           </div>
           <div className='pro'>
             <img src={'src/images/kitchen 1.jpg'}alt="" />
             <div className='des'>
-              <span>Kitchen & Dinning</span>
-              <h5>CookWare</h5>
+              <span>CoocWare</span>
+              <h5>Ajinomoto Peruano Peruvian Seasoning</h5>
               <div className='star'>
               <FontAwesomeIcon icon={faStar} />
               <FontAwesomeIcon icon={faStar} />
@@ -84,7 +84,7 @@ const home = ()=>{
               <FontAwesomeIcon icon={faStar} />
               <FontAwesomeIcon icon={faStar} />
               </div>
-              <h4>Rs.55,000</h4>
+              <h4>Rs. 499</h4>
             </div>
             <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
           </div>
@@ -253,7 +253,7 @@ const home = ()=>{
 
         <div className='col'>
           <h5>About</h5>
-          <a href="#">About Us</a>
+          <a href="/Seller">About Us</a>
           <a href="#">Delivery Information</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>

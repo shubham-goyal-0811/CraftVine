@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import sellerhome from "../assets/sellerhome.jpeg";
-import accLogin from "../assets/accLogin.jpeg";
-import appstep2 from "../assets/application-step2.jpeg";
+import sellerhome from "./assets/sellerhome.jpeg";
+import accLogin from "./assets/accLogin.jpeg";
+import appstep2 from "./assets/application-step2.jpeg";
 import UploadPDFButton from "./UploadPDFButton";
-import verifyimg from "../assets/verify.jpeg";
+import verifyimg from "./assets/verify.jpeg";
 import UploadJpegButton from "./UploadJpegButton";
-import goods from "../assets/goods.jpeg";
+import goods from "./assets/goods.jpeg";
 import CategorySelection from "./CategorySelection";
-import logo from "../assets/mainlogo4.png";
+import logo from "./assets/mainlogo4.png";
 // import ImageUploadComponent from "./ImageUploadComponent";  
 
 

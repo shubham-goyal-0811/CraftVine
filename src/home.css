@@ -143,6 +143,21 @@ html {
   color: black;
   text-align: center;
 }
+#product h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+#product h2:hover{
+  color: #0db6ab;
+}
+
+.ptag{
+  font-size: 20px;
+} 
+.ptag:hover{
+  color: #0db6ab;
+}
+
 #product .pro{
   width: 23%;
   min-width: 250px;

@@ -1,4 +1,4 @@
-import './home';
+import './jewellery';
 const jewellery= ()=>{
    return (
       <>

@@ -10,13 +10,12 @@ import handbags_and_totes from './handbags_and_totes.jsx';
 import stationary_and_parties_supply from './stationary_and_parties_supply.jsx';
 import clothing_and_accesories from './clothing_and_accesories.jsx';
 import toys_and_games from './toys_and_games.jsx';
-
+import Seller from './Seller.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-
     <>
     <Routes> 
 
@@ -29,6 +28,7 @@ function App() {
     <Route path ="/stationary_and_parties_supply" Component ={ stationary_and_parties_supply}/>
     <Route path ="/clothing_and_accesories" Component ={ clothing_and_accesories}/>
     <Route path ="/toys_and_games" Component ={ toys_and_games}/>
+    <Route path ="/Seller" Component ={ Seller}/>
 
     </Routes>
     </>
