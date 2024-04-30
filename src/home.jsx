@@ -3,7 +3,7 @@ import './home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart, faStar, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-import { faOutdent } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     // State to track items in the cart and cart visibility
@@ -28,14 +28,14 @@ const Home = () => {
         },
         {
             id: 3,
-            image: 'src/images/kitchen 1.jpg',
+            image: 'src/images/clothing.jpg',
             category: 'Cookware',
-            name: 'Ajinomoto Peruano Peruvian Seasoningsfdghjkytrkhfjhtj',
+            name: 'Ajinomoto Peruano Peruvian Seasonings Pets Special Editions T-shirts',
             price: 'Rs. 499',
         },
         {
             id: 4,
-            image: 'src/images/beauty 1.jpg',
+            image: 'src/images/kitchen 1.jpg',
             category: 'Beauty & Grooming',
             name: 'Beauty Sets',
             price: 'Rs. 55,000',
@@ -77,7 +77,6 @@ const Home = () => {
 
     // Function to remove an item from the cart
     const removeFromCart = (index) => {
-        // Remove the item at the given index
         setCart(cart.filter((_, i) => i !== index));
     };
 
@@ -90,33 +89,36 @@ const Home = () => {
         <>
             {/* Header section */}
             <section id="header">
-                <a href="#"><img src={'src/images/craftVine-logo-removebg-preview (1).png'} alt="Logo" /></a>
+                <a href="#"><img src={'/images/craftVine-logo.png'} alt="Logo" /></a>
                 <div>
                     <ul id="navbar">
                         <li><a href="#header" className='active'>Home</a></li>
                         <li><a href="#product">Featured Products</a></li>
-                        <li><a href="#catogoriesitems">Shop By Category</a></li>
-                        <li><a href="#editorpicks">Editor's choice</a></li>
-                        <li><a href="#section1">Contact</a></li>
+                        <li><a href="#categories">Shop By Category</a></li>
+                        <li><a href="#editorpicks">Editor's Choice</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Login</a></li>
                         <li>
                             {/* Cart icon */}
-                            <a href=""onClick={toggleCartVisibility}>
+                            <a href="#" onClick={toggleCartVisibility}>
                                 <FontAwesomeIcon icon={faShoppingCart} />
+                                {cart.length > 0 && (
+                                    <span className="cart-count">{cart.length}</span>
+                                )}
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div id="mobile">
                     <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
-                    <FontAwesomeIcon id="bar" icon={faOutdent} />
+                    <FontAwesomeIcon id="bar" icon={faBars} />
                 </div>
             </section>
 
             {/* Discount section */}
             <section id="discount">
-                <h4>Trade-in-Offer</h4>
-                <h2>Super value Deals</h2>
+                <h4>Trade-in Offer</h4>
+                <h2>Super Value Deals</h2>
                 <h1>On all Products</h1>
                 <p>Save more with coupons and up to 70% off!</p>
                 <button>Shop Now</button>
@@ -125,7 +127,7 @@ const Home = () => {
             {/* Featured Products section */}
             <section id="product">
                 <h2>Featured Products</h2>
-                <p className='ptag'>Summer Collection New Modern Design</p>
+                <p>Summer Collection New Modern Design</p>
                 <div className='pro-container'>
                     {products.map((product) => (
                         <div className='pro' key={product.id}>
@@ -134,7 +136,6 @@ const Home = () => {
                                 <span>{product.category}</span>
                                 <h5>{product.name}</h5>
                                 <div className='star'>
-                                    {/* Render star ratings */}
                                     {[...Array(5)].map((_, index) => (
                                         <FontAwesomeIcon key={index} icon={faStar} />
                                     ))}
@@ -148,11 +149,6 @@ const Home = () => {
                     ))}
                 </div>
             </section>
-
-            {/* Cart Icon */}
-            <div className="cart-icon" onClick={toggleCartVisibility} title="Toggle Cart">
-                <FontAwesomeIcon icon={faShoppingCart} />
-            </div>
 
             {/* Cart Display */}
             {isCartVisible && (
@@ -173,7 +169,7 @@ const Home = () => {
                         </ul>
                     )}
                     <p>
-                        Total Price: Rs. {cart.reduce((acc, item) => acc + parseFloat(item.price.replace('Rs. ', '')), 0)}
+                        Total Price: Rs. {cart.reduce((acc, item) => acc + parseFloat(item.price.replace('Rs. ', '')), 0).toFixed(2)}
                     </p>
                 </div>
             )}
@@ -181,41 +177,34 @@ const Home = () => {
             {/* Shop By Category section */}
             <section id="catogoriesitems">
                 <h3>Shop By Category</h3>
-                <div className="catogoriesitems">
+                <div className="catogories-items">
                     <div className="boxs"><a href="/jewellery">Jewellery</a></div>
                     <div className="boxs"><a href="/home_decor">Home Decor</a></div>
-                    <div className="boxs"><a href="/kitchen_and_dinning">Kitchen & Dining</a></div>
-                    <div className="boxs"><a href="/beauty_and_grooming">Beauty & Grooming</a></div>
-                    <div className="boxs"><a href="/handbags_and_totes">Handbags & Totes</a></div>
-                    <div className="boxs"><a href="/stationary_and_parties_supply">Stationary & Parties Supply</a></div>
-                    <div className="boxs"><a href="/clothing_and_accesories">Clothing & Accessories</a></div>
-                    <div className="boxs"><a href="/toys_and_games">Toys & Games</a></div>
+                    <div className="boxs"><a href="/kitchen_dining">Kitchen & Dining</a></div>
+                    <div className="boxs"><a href="/beauty_grooming">Beauty & Grooming</a></div>
+                    <div className="boxs"><a href="/handbags_totes">Handbags & Totes</a></div>
+                    <div className="boxs"><a href="/stationary_party_supply">Stationery & Party Supply</a></div>
+                    <div className="boxs"><a href="/clothing_accessories">Clothing & Accessories</a></div>
+                    <div className="boxs"><a href="/toys_games">Toys & Games</a></div>
                 </div>
             </section>
 
-            {/* Editor's Picks section */}
+            {/* Editor's Choice section */}
             <section id="editorpicks">
-                <h3>Editor's Pick</h3>
+                <h3>Editor's Choice</h3>
                 <div className='editorspickitems'>
-                    <div className='arrival'>
-                        <a href="#">Arrival</a>
-                    </div>
-                    <div className='madeinusa'>
-                        <a href="#">Made in USA</a>
-                    </div>
-                    <div className='bestseller'>
-                        <a href="#">Best Seller</a>
-                    </div>
+                    <div className='arrival'><a href="#">Arrival</a></div>
+                    <div className='madeinusa'><a href="#">Made in USA</a></div>
+                    <div className='bestseller'><a href="#">Best Seller</a></div>
                 </div>
             </section>
 
             {/* Sign Up section */}
             <section id="signup">
-                <div className='signuptext'>
+                <div className='signup-text'>
                     <h4>Sign Up for CraftsVine</h4>
                     <p>Get email updates about our latest shop and <span>special offers</span>.</p>
                 </div>
-
                 <div className='form'>
                     <input type="text" placeholder='Your email address' />
                     <button className='normal'>Sign-Up</button>
@@ -223,16 +212,16 @@ const Home = () => {
             </section>
 
             {/* Footer section */}
-            <footer id="section1">
+            <footer id="footer">
                 <div className='col'>
-                    <img className="lowelogo" src={'src/images/craftVine-logo-removebg-preview.png'} alt="CraftsVine Logo" />
+                    <img src='/images/craftVine-logo.png' alt='CraftsVine Logo' className='logo'/>
                     <h4>Contact</h4>
-                    <p><strong>Address:</strong> asdfghjkl</p>
-                    <p><strong>Phone No:</strong> asdfghjkl</p>
-                    <p><strong>Hours:</strong> asdfghjkl</p>
-                    <div className='followus'>
+                    <p><strong>Address:</strong> Your address here</p>
+                    <p><strong>Phone:</strong> Your phone number here</p>
+                    <p><strong>Hours:</strong> Your hours here</p>
+                    <div className='follow-us'>
                         <h3>Follow Us</h3>
-                        <div className='icon'>
+                        <div className='social-icons'>
                             <FontAwesomeIcon icon={faFacebook} />
                             <FontAwesomeIcon icon={faTwitter} />
                             <FontAwesomeIcon icon={faInstagram} />
@@ -243,27 +232,27 @@ const Home = () => {
 
                 <div className='col'>
                     <h5>About</h5>
-                    <a href="/Seller">About Us</a>
-                    <a href="#">Delivery Information</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Contact Us</a>
+                    <a href="/about_us">About Us</a>
+                    <a href="/delivery_info">Delivery Information</a>
+                    <a href="/privacy_policy">Privacy Policy</a>
+                    <a href="/terms_conditions">Terms & Conditions</a>
+                    <a href="/contact_us">Contact Us</a>
                 </div>
 
                 <div className='col'>
                     <h6>My Account</h6>
-                    <a href="#">Sign In</a>
-                    <a href="#">View Cart</a>
-                    <a href="#">Track My Order</a>
-                    <a href="#">Help</a>
+                    <a href="/sign_in">Sign In</a>
+                    <a href="/view_cart">View Cart</a>
+                    <a href="/track_order">Track My Order</a>
+                    <a href="/help">Help</a>
                 </div>
 
-                <div className='colinstall'>
+                <div className='col'>
                     <h2>Install App</h2>
                     <p>From App Store or Google Play</p>
-                    <div className='row'>
-                        <img src={'src/images/appstore.png'} alt="App Store" />
-                        <img src={'src/images/googleplay.png'} alt="Google Play" />
+                    <div className='app-links'>
+                        <img src='/images/appstore.png' alt='App Store' />
+                        <img src='/images/googleplay.png' alt='Google Play' />
                     </div>
                 </div>
             </footer>

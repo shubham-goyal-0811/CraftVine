@@ -236,7 +236,7 @@ section{
   color:rgb(25, 197, 197) ;
   text-decoration: underline;
 }
-.catogoriesitems {
+.catogories-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   gap: 50px; /* Adjust the gap between grid items as needed */
@@ -245,8 +245,16 @@ section{
   padding: 20px; /* Optional: add padding around the grid container */
   text-align: center;
 }
-
-.catogoriesitems .boxs{
+#catogoriesitems h3{
+  color: black;
+  font-size: 4.77vh;
+}
+#catogoriesitems h3:hover{
+  color: rgb(25, 198, 198);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.catogories-items .boxs{
   height: 260px;
   width: 290px;
   background-color: aquamarine;
@@ -319,7 +327,19 @@ section{
   text-align: center;
   background-color: white;
 }
+#editorpicks h3{
+  color: black;
+  font-size: 4.778vh;
+  cursor: pointer;
 
+}
+#editorpicks h3:hover{
+  color: rgb(25, 198, 198);
+  font-size: 4.778vh;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
 .arrival{
   height: 550px;
   width: 400px;
@@ -591,6 +611,29 @@ footer .followus .icon{
 /* Style the cart icon link on hover */
 #navbar li:last-child a:hover {
   color: rgb(25, 197, 197); /* Adjust the hover color as needed */
+}
+/* Styles for the cart container */
+.cart-container {
+  position: absolute; /* Make the cart container absolute */
+  top: 50px; /* Adjust the value as needed to position the cart below the navigation bar */
+  right: 10px; /* Adjust the value as needed for right alignment */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Keep the cart container on top of other elements */
+  color: black;
+}
+.cart-count {
+  background-color: red;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.75rem;
 }
 
 
