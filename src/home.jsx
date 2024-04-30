@@ -89,12 +89,12 @@ const Home = () => {
         <>
             {/* Header section */}
             <section id="header">
-                <a href="#"><img src={'/images/craftVine-logo.png'} alt="Logo" /></a>
+                <a href="#"><img src={'src/images/craftVine-logo-removebg-preview (1).png'} alt="Logo" /></a>
                 <div>
                     <ul id="navbar">
                         <li><a href="#header" className='active'>Home</a></li>
                         <li><a href="#product">Featured Products</a></li>
-                        <li><a href="#categories">Shop By Category</a></li>
+                        <li><a href="#catogoriesitems">Shop By Category</a></li>
                         <li><a href="#editorpicks">Editor's Choice</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Login</a></li>
@@ -214,7 +214,7 @@ const Home = () => {
             {/* Footer section */}
             <footer id="footer">
                 <div className='col'>
-                    <img src='/images/craftVine-logo.png' alt='CraftsVine Logo' className='logo'/>
+                    <img src='src/images/craftVine-logo-removebg-preview (1).png' alt='CraftsVine Logo' className='logo'/>
                     <h4>Contact</h4>
                     <p><strong>Address:</strong> Your address here</p>
                     <p><strong>Phone:</strong> Your phone number here</p>
@@ -251,8 +251,8 @@ const Home = () => {
                     <h2>Install App</h2>
                     <p>From App Store or Google Play</p>
                     <div className='app-links'>
-                        <img src='/images/appstore.png' alt='App Store' />
-                        <img src='/images/googleplay.png' alt='Google Play' />
+                        <img src='src/images/appstore.png' alt='App Store' />
+                        <img src='src/images/googleplay.png' alt='Google Play' />
                     </div>
                 </div>
             </footer>
