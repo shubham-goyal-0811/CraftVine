@@ -29,6 +29,7 @@ function App() {
     <Route path ="/clothing_and_accesories" Component ={ clothing_and_accesories}/>
     <Route path ="/toys_and_games" Component ={ toys_and_games}/>
     <Route path ="/Seller" Component ={ Seller}/>
+    <Route path="/" exact component={Home} />
 
     </Routes>
     </>

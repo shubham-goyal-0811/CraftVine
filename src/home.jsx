@@ -28,21 +28,21 @@ const Home = () => {
         },
         {
             id: 3,
-            image: 'src/images/kitchen1.jpg',
+            image: 'src/images/kitchen 1.jpg',
             category: 'Cookware',
-            name: 'Ajinomoto Peruano Peruvian Seasoning',
+            name: 'Ajinomoto Peruano Peruvian Seasoningsfdghjkytrkhfjhtj',
             price: 'Rs. 499',
         },
         {
             id: 4,
-            image: 'src/images/beauty1.jpg',
+            image: 'src/images/beauty 1.jpg',
             category: 'Beauty & Grooming',
             name: 'Beauty Sets',
             price: 'Rs. 55,000',
         },
         {
             id: 5,
-            image: 'src/images/kitchenand.jpg',
+            image: 'src/images/kitchen and.jpg',
             category: 'Kitchen & Dining',
             name: 'Cups & Mugs',
             price: 'Rs. 55,000',
@@ -90,7 +90,7 @@ const Home = () => {
         <>
             {/* Header section */}
             <section id="header">
-                <a href="#"><img src={'src/images/craftVine-logo-removebg-preview.png'} alt="Logo" /></a>
+                <a href="#"><img src={'src/images/craftVine-logo-removebg-preview (1).png'} alt="Logo" /></a>
                 <div>
                     <ul id="navbar">
                         <li><a href="#header" className='active'>Home</a></li>
