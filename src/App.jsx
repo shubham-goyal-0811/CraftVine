@@ -10,7 +10,8 @@ import handbags_and_totes from './handbags_and_totes.jsx';
 import stationary_and_parties_supply from './stationary_and_parties_supply.jsx';
 import clothing_and_accesories from './clothing_and_accesories.jsx';
 import toys_and_games from './toys_and_games.jsx';
-import Seller from './Seller.jsx';
+
+import Seller from "./Seller.jsx" ;
 
 function App() {
   const [count, setCount] = useState(0)
