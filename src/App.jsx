@@ -29,6 +29,7 @@ function App() {
     <Route path ="/stationary_and_parties_supply" Component ={ stationary_and_parties_supply}/>
     <Route path ="/clothing_and_accesories" Component ={ clothing_and_accesories}/>
     <Route path ="/toys_and_games" Component ={ toys_and_games}/>
+    <Route path ="/Seller" Component ={ Seller}/>
     </Routes>
     </>
   )
