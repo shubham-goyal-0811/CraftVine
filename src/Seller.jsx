@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import sellerhome from "./assets/sellerhome.jpeg";
 import accLogin from "./assets/accLogin.jpeg";
 import appstep2 from "./assets/application-step2.jpeg";
-import UploadPDFButton from "./UploadPDFButton";
+// import UploadPDFButton from "./UploadPDFButton";
 import verifyimg from "./assets/verify.jpeg";
-import UploadJpegButton from "./UploadJpegButton";
+// import UploadJpegButton from "./UploadJpegButton";
 import goods from "./assets/goods.jpeg";
 import CategorySelection from "./CategorySelection";
 import logo from "./assets/mainlogo4.png";
@@ -139,7 +139,7 @@ const Seller = () => {
           >
             <img src={logo} className="w-10 h-10 rounded-full" alt="Logo" />
             {/* Add your logo image here */}
-            <span className="ml-3 text-xl">CraftsVine</span>
+            <span className="ml-3 text-xl text-white">CraftsVine</span>
           </a>
           <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             GO Back
