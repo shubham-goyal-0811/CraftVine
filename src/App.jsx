@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // new imports
 import {Routes,Route} from 'react-router-dom';
-import home from './home.jsx'
+import Home from './home.jsx'
 import jewellery from './jewellery.jsx';
 import home_decor from './home_decor.jsx';
 import kitchen_and_dinning from './kitchen_and_dinning.jsx';
@@ -19,7 +19,7 @@ function App() {
     <>
     <Routes> 
 
-    <Route path='/' Component={ home}/>
+    <Route path='/' Component={ Home}/>
     <Route path ="/jewellery" Component ={ jewellery}/>
     <Route path ="/home_decor" Component ={ home_decor}/>
     <Route path ="/kitchen_and_dinning" Component ={ kitchen_and_dinning}/>

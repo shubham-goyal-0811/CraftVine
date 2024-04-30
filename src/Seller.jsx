@@ -8,7 +8,7 @@ import UploadJpegButton from "./UploadJpegButton";
 import goods from "./assets/goods.jpeg";
 import CategorySelection from "./CategorySelection";
 import logo from "./assets/mainlogo4.png";
-// import ImageUploadComponent from "./ImageUploadComponent";  
+// import ImageUploadComponent from "./ImageUploadComponent";
 
 
 const Seller = () => {
