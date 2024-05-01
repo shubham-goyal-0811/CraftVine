@@ -20,7 +20,7 @@ function App() {
     <>
     <Routes> 
 
-    <Route path='/' Component={ Home}/>
+    <Route path ='/' Component={ Home}/>
     <Route path ="/jewellery" Component ={ jewellery}/>
     <Route path ="/home_decor" Component ={ home_decor}/>
     <Route path ="/kitchen_and_dinning" Component ={ kitchen_and_dinning}/>
@@ -30,8 +30,7 @@ function App() {
     <Route path ="/clothing_and_accesories" Component ={ clothing_and_accesories}/>
     <Route path ="/toys_and_games" Component ={ toys_and_games}/>
     <Route path ="/Seller" Component ={ Seller}/>
-    <Route path="/" exact component={Home} />
-
+    <Route path ="/Seller" component={Seller} />
     </Routes>
     </>
   )

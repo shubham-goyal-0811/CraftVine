@@ -96,7 +96,7 @@ const Home = () => {
                         <li><a href="#product">Featured Products</a></li>
                         <li><a href="#catogoriesitems">Shop By Category</a></li>
                         <li><a href="#editorpicks">Editor's Choice</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#footer">Contact</a></li>
                         <li><a href="#">Login</a></li>
                         <li>
                             {/* Cart icon */}
@@ -121,7 +121,7 @@ const Home = () => {
                 <h2>Super Value Deals</h2>
                 <h1>On all Products</h1>
                 <p>Save more with coupons and up to 70% off!</p>
-                <button>Shop Now</button>
+                <a href="#product"><button>Shop Now</button></a>
             </section>
 
             {/* Featured Products section */}
@@ -173,7 +173,7 @@ const Home = () => {
                     </p>
                 </div>
             )}
-
+            
             {/* Shop By Category section */}
             <section id="catogoriesitems">
                 <h3>Shop By Category</h3>
@@ -214,13 +214,13 @@ const Home = () => {
             {/* Footer section */}
             <footer id="footer">
                 <div className='col'>
-                    <img src='src/images/craftVine-logo-removebg-preview (1).png' alt='CraftsVine Logo' className='logo'/>
-                    <h4>Contact</h4>
+                    <img src='src/images/craftVine-logo-removebg-preview (1).png' alt='CraftsVine Logo' className='logo' />
+
                     <p><strong>Address:</strong> Your address here</p>
                     <p><strong>Phone:</strong> Your phone number here</p>
                     <p><strong>Hours:</strong> Your hours here</p>
                     <div className='follow-us'>
-                        <h3>Follow Us</h3>
+                        
                         <div className='social-icons'>
                             <FontAwesomeIcon icon={faFacebook} />
                             <FontAwesomeIcon icon={faTwitter} />
@@ -232,7 +232,7 @@ const Home = () => {
 
                 <div className='col'>
                     <h5>About</h5>
-                    <a href="/about_us">About Us</a>
+                    <a href="/Seller">About Us</a>
                     <a href="/delivery_info">Delivery Information</a>
                     <a href="/privacy_policy">Privacy Policy</a>
                     <a href="/terms_conditions">Terms & Conditions</a>
@@ -242,6 +242,7 @@ const Home = () => {
                 <div className='col'>
                     <h6>My Account</h6>
                     <a href="/sign_in">Sign In</a>
+                    <a href="/Seller">Seller Account</a>
                     <a href="/view_cart">View Cart</a>
                     <a href="/track_order">Track My Order</a>
                     <a href="/help">Help</a>
@@ -251,8 +252,8 @@ const Home = () => {
                     <h2>Install App</h2>
                     <p>From App Store or Google Play</p>
                     <div className='app-links'>
-                        <img src='src/images/appstore.png' alt='App Store' />
-                        <img src='src/images/googleplay.png' alt='Google Play' />
+                        <img src='src/images/png-clipart-app-store-google-play-apple-apple-text-logo (1).png' alt='App Store' />
+                        <img src='src/images/png-clipart-app-store-google-play-apple-apple-text-logo (1).png' alt='Google Play' />
                     </div>
                 </div>
             </footer>

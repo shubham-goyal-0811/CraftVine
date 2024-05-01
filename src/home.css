@@ -478,11 +478,11 @@ footer a{
   margin-bottom: 10px;
 
 }
-footer .followus{
+footer .follow-us{
   margin-top: 20px;
 
 }
-footer .followus .icon{
+footer .follow-us .icon{
   color: black;
   padding-right: 4px;
   cursor: pointer;
@@ -508,7 +508,7 @@ footer .followus .icon{
   position: relative;
   top: -70px;
 }
-.followus h3{
+.follow-us h3{
   position: relative;
   top: -110px;
 }
@@ -520,24 +520,26 @@ footer .followus .icon{
 .col h6{
   font-size: 13px;
 }
-.colinstall h2{
+.col h2{
   font-size: 14px;
   position: relative;
   top: 40px;
 }
-.colinstall p{
+.col p{
   position: relative;
   top: 50px;
 }
-.colinstall img{
+.col img{
   position: relative;
   top: 30px;
+  height: 30px;
+  margin-bottom: 6px;
 }
-.colinstall{
+.col{
   position: relative;
   top: 2px;
-  left: -20px;
 }
+
 @media (max-width:799px) {
     #navbar{
       display: flex;
@@ -582,11 +584,10 @@ footer .followus .icon{
       gap: 80px; /* Adjust the gap between grid items as needed */
       justify-content: center; /* Centers the grid items horizontally */
       align-items: center; /* Centers the grid items vertically */
-      padding: 30px; /* Optional: add padding around the grid container */
+      padding: 60px; /* Optional: add padding around the grid container */
       text-align: center;
       background-color: white;
-      flex-wrap: wrap;
-      overflow: hidden;
+      overflow-x: scroll;
     }
 }
 /* Style for the cart icon in the navbar */
@@ -624,6 +625,7 @@ footer .followus .icon{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000; /* Keep the cart container on top of other elements */
   color: black;
+  font-weight: 400;
 }
 .cart-count {
   background-color: red;
@@ -635,6 +637,12 @@ footer .followus .icon{
   right: -5px;
   font-size: 0.75rem;
 }
-
+.cart-container button{
+  background-color: #83fff7;
+}
+.cart-container button:hover{
+  text-decoration: underline;
+  border: 1px solid white;
+}
 
 
