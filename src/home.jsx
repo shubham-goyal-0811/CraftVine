@@ -110,7 +110,7 @@ const Home = () => {
                     </ul>
                 </div>
                 <div id="mobile">
-                    <a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a>
+                    <FontAwesomeIcon icon={faShoppingCart} />
                     <FontAwesomeIcon id="bar" icon={faBars} />
                 </div>
             </section>
