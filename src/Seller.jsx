@@ -20,7 +20,7 @@ const Seller = () => {
   const [step2Completed, setStep2Completed] = useState(false);
   const [step3Completed, setStep3Completed] = useState(false);
 
-  const uploadimgFileaadhar = (e) => {
+  const uploadimgFileaadhar = (e) => { //for aadhar card image
     const file = e.target.files[0];
     if (file) {
       // Check if the file is a jpeg
@@ -37,7 +37,7 @@ const Seller = () => {
       }
     }
   };
-  const uploadimgFilepan = (e) => {
+  const uploadimgFilepan = (e) => { //for Pan card image
     const file = e.target.files[0];
     if (file) {
       // Check if the file is a jpeg
@@ -54,7 +54,7 @@ const Seller = () => {
       }
     }
   };
-  const uploadFile = (e) => {
+  const uploadFile = (e) => {//for registration certifcate
     const file = e.target.files[0];
     if (file) {
       // Check if the file is a PDF
@@ -67,7 +67,7 @@ const Seller = () => {
       }
     }
   };
-  const uploadFileapp = (e) => {
+  const uploadFileapp = (e) => { //for application
     const file = e.target.files[0];
     if (file) {
       // Check if the file is a PDF
