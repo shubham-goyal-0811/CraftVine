@@ -61,7 +61,7 @@ html {
 /* landing page css begins */
 #discount {
   height: 90vh;
-  background-image: linear-gradient(90deg, rgba(12, 12, 12, 0.5) 10%, hsla(60, 100%, 1%, 0.3)100%), url('src/images/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
+  background-image: linear-gradient(90deg, rgba(12, 12, 12, 0.6) 10%, hsla(60, 100%, 1%, 0.5)100%), url('src/images/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
   background-size: cover; /* Ensures the image covers the entire section */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Centers the image within the section */
@@ -590,6 +590,16 @@ footer .follow-us .icon{
       background-color: white;
       overflow-x: scroll;
     }
+    .catogories-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+      gap: 50px; /* Adjust the gap between grid items as needed */
+      justify-content: center; /* Centers the grid items horizontally */
+      align-items: center; /* Centers the grid items vertically */
+      padding: 20px; /* Optional: add padding around the grid container */
+      text-align: center;
+      overflow-y: scroll;
+    }
 }
 /* Style for the cart icon in the navbar */
 
@@ -644,6 +654,61 @@ footer .follow-us .icon{
 .cart-container button:hover{
   text-decoration: underline;
   border: 1px solid white;
+}
+/* Style for the "Shop By Category" button */
+.dropdown-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.dropdown-button:hover {
+  background-color: #f4f4f4;
+  color: white;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position the menu below the button */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000; /* Ensure it appears above other elements */
+  width: 200px;
+  transition: opacity 0.3s ease;
+  display: none; /* Initially hidden */
+}
+
+/* Show the dropdown menu when the button is open */
+.dropdown-button.open + .dropdown-menu {
+  display: block;
+}
+
+/* Style for menu items */
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Menu item hover effect */
+.dropdown-menu a:hover {
+  color: white;
 }
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './kitchen.css';
 
 const kitchen_and_dinning= ()=>{
    return (
