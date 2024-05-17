@@ -15,7 +15,6 @@ import Seller from "./Seller.jsx" ;
 import checkout from './checkout.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

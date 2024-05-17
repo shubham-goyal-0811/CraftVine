@@ -17,7 +17,7 @@ html {
   top: 0px;
   left: 0;
 }
-#header img{
+.cv-logo{
   height: 50px;
   width: 70px;
 }
@@ -28,7 +28,7 @@ html {
 }
 #navbar li{
   list-style: none;
-  padding: 0 20px;
+  padding: 0 10px;
   position: relative;
 }
 #navbar li a{
