@@ -1,8 +1,14 @@
-import './jewellery';
+import './jewellery.css';
 const jewellery= ()=>{
    return (
       <>
-        <h1>hello jwellery</h1>
+        <section id='topsection'>
+         <div>
+            <ul>
+               <li>helo world</li>
+            </ul>
+         </div>
+        </section>
       </>
    )
 } 

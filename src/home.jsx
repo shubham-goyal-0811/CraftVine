@@ -322,7 +322,6 @@ const Home = () => {
             price: 'Rs. 1199',
         },
     ];
-
     // Function to add an item to the cart
     const addToCart = (product) => {
         setCart((prevCart) => [...prevCart, product]);
@@ -467,7 +466,7 @@ const Home = () => {
             <section id="catogoriesitems">
                 <h3>Shop By Category</h3>
                 <div className="catogories-items">
-                    <div className="boxs"><a href="#" onClick={() => handleCategorySelection('Jewellery')}>Jewellery</a></div>
+                    <div className="boxs"><a href="/jewellery" onClick={() => handleCategorySelection('Jewellery')}>Jewellery</a></div>
                     <div className="boxs"><a href="#" onClick={() => handleCategorySelection('Home Decor')}>Home Decor</a></div>
                     <div className="boxs"><a href="#" onClick={() => handleCategorySelection('Kitchen & Dining')}>Kitchen & Dining</a></div>
                     <div className="boxs"><a href="#" onClick={() => handleCategorySelection('Beauty & Grooming')}>Beauty & Grooming</a></div>
