@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './home.css';
+import { useAuth0 } from "@auth0/auth0-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart, faStar, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
@@ -353,12 +354,13 @@ const Home = () => {
     const filteredProducts = selectedCategory
         ? products.filter((product) => product.category === selectedCategory)
         : products;
-
+    
+    const { loginWithRedirect ,user, isAuthenticated,logout} = useAuth0();
     return (
         <>
             {/* Header section */}
             <section id="header">
-                <a href=""><img src={'src/images/craftVine-logo-removebg-preview (1).png'} alt="Logo" /></a>
+                <a href=""><img className='cv-logo' src={'src/images/craftVine-logo-removebg-preview (1).png'} alt="Logo" /></a>
                 <div>
                     <ul id="navbar">
                         <li><a href="#header" className='active'>Home</a></li>
@@ -384,7 +386,7 @@ const Home = () => {
                         </li>
                         <li><a href="#editorpicks">Editor's Choice</a></li>
                         <li><a href="#footer">Contact</a></li>
-                        <li><a href="#">Login</a></li>
+                        
                         <li>
                             {/* Cart icon */}
                             <a href="#product" onClick={(event) => toggleCartVisibility(event)}>
@@ -395,7 +397,23 @@ const Home = () => {
                             </a>
 
                         </li>
+                        {isAuthenticated || <button className='border-black border-2 rounded-full text-neutral-950 hover:bg-black hover:text-white hover:scale-110' onClick={() => loginWithRedirect()}>Log In</button>}
+                        <div className="profile-container flex flex-col justify-center items-center">
+                        {isAuthenticated && (
+                                    <div>
+                                        <img className='w-12 flex items-center justify-center text-center' src={user.picture} alt={user.name} />
+                                        <h2 className='text-neutral-950 ml-0'>{user.name}</h2>
+                                    </div>
+                                    )
+                        }
+                        </div>
+                        {
+                            isAuthenticated && <button className='border-black border-2 rounded-full text-neutral-950 hover:bg-black hover:text-white hover:scale-110' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                            Log Out
+                          </button>
+                        }
                     </ul>
+                    
                 </div>
                 <div id="mobile">
                     <FontAwesomeIcon icon={faBars} />
