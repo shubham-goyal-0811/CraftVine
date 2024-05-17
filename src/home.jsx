@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart, faStar, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
 const Home = () => {
     // State to track items in the cart and cart visibility
     const [cart, setCart] = useState([]);
@@ -113,39 +112,214 @@ const Home = () => {
             price: 'Rs. 799',
         },
         {
+            id: 16,
+            image: 'src/images/kitchen5.webp',
+            category: 'Kitchen & Dining',
+            name: 'AmorArc Ceramic Dinnerware Sets,Handmade Reactive Glaze Plates and Bowls Sets,Highly Chip and Crack',
+            price: 'Rs. 1,499',
+        },
+        {
+            id: 17,
+            image: 'src/images/kitchen6.webp',
+            category: 'Kitchen & Dining',
+            name: 'Canisters Sets for Kitchen Counter Storage and Organization with Wooden Bamboo Lids, Food Pantry Containers',
+            price: 'Rs. 999',
+        },
+        {
+            id: 18,
+            image: 'src/images/kitchen7.webp',
+            category: 'Kitchen & Dining',
+            name: 'Handmade Charcuterie and Cutting Board - Decorative, Board - Decorative Olive Wood Board for Serving',
+            price: 'Rs. 699',
+        },
+        {
             id: 15,
+            image: 'src/images/kitchen8.webp',
+            category: 'Kitchen & Dining',
+            name: 'Personalized silverware set, Newly, Bridal shower anniversary birthday present for her him',
+            price: 'Rs. 14,999',
+        },
+        {
+            id: 19,
+            image: 'src/images/kitchen9.webp',
+            category: 'Kitchen & Dining',
+            name: 'Sympathy for Loss of Loved One Dad Mom Husband Sister Friend Bereavement Gifts Condolences',
+            price: 'Rs. 14,999',
+        },
+        {
+            id: 20,
             image: 'src/images/kitchen3.webp',
             category: 'Kitchen & Dining',
             name: 'Personalized silverware set, Newly, Bridal shower anniversary birthday present for her him',
             price: 'Rs. 14,999',
         },
         {
-            id: 16,
+            id: 21,
             image: 'src/images/kitchen and.jpg',
             category: 'Kitchen & Dining',
             name: 'C & M Personal Gifts Stemless Wine Glass (1 Piece) 17 Ounces, Gag Gifts for Women, Funny Christmas gift',
             price: 'Rs. 499',
         },
         {
-            id: 17,
+            id: 22,
             image: 'src/images/personalized.jpg',
             category: 'Stationery & Party Supplies',
             name: 'Personalized Hockey Stationery',
             price: 'Rs. 599',
         },
         {
-            id: 18,
+            id: 23,
             image: 'src/images/toys.jpg',
             category: 'Toys',
             name: 'Baby & Toddler Toys',
             price: 'Rs. 699',
         },
         {
-            id: 19,
+            id: 24,
             image: 'src/images/clothing.jpg',
             category: 'Clothing',
             name: 'Men\'s T-shirt',
             price: 'Rs. 699',
+        },
+        {
+            id: 25,
+            image: 'src/images/home decor9.webp',
+            category: 'Home Decor',
+            name: 'Mason Jar Night Light for Friend, Birthday Day Gifts for Women, Home Decoration Lights, Night Light Gift for Birthday',
+            price: 'Rs. 749',
+        },
+        {
+            id: 26,
+            image: 'src/images/home decor8.webp',
+            category: 'Home Decor',
+            name: 'Night Light for Kids Room: Baby Night Light for Nursery Bedroom, Cute Bunny Personalized Acrylic Night Light',
+            price: 'Rs. 999',
+        },
+        {
+            id: 27,
+            image: 'src/images/home decor 7.webp',
+            category: 'Home Decor',
+            name: 'Modern LED Chandeliers Flush Mount Linear Art Deco Chandelier Fixture Sputnik Pendant Light for Dining',
+            price: 'Rs. 1799',
+        },
+        {
+            id: 28,
+            image: 'src/images/home decor9.webp',
+            category: 'Home Decor',
+            name: 'Beeswax & Propolis Magic Salve | Boils Treatment | Chalazion | Hidradenitis Suppurativa Abscesses',
+            price: 'Rs. 999',
+        },
+        {
+            id: 29,
+            image: 'src/images/beauty 3.jpg',
+            category: 'Beauty & Grooming',
+            name: 'Personalized baby night light | Gift for Baby | baby night light | girl boy bedroom bedside light gift for newborn',
+            price: 'Rs. 699',
+        },
+        {
+            id: 30,
+            image: 'src/images/beauty 8.jpg',
+            category: 'Beauty & Grooming',
+            name: 'Organic Lip Balm Peppermint - 4 Pack Organic Gifts for Women, All Natural Lip Balm Birthday Gifts for Her & Him,',
+            price: 'Rs. 699',
+        },
+        {
+            id: 31,
+            image: 'src/images/home decor6.webp',
+            category: 'Beauty & Grooming',
+            name: 'Personalized baby night light | Gift for Baby | baby night light | girl boy bedroom bedside light gift for newborn',
+            price: 'Rs. 399',
+        },
+        {
+            id: 32,
+            image: 'src/images/beauty 6.jpg',
+            category: 'Beauty & Grooming',
+            name: 'Exfoliating Knitted Back Scrubber Handles Two Sides Body Invigorating Blood Circulation Men Women',
+            price: 'Rs. 499',
+        },
+        {
+            id: 33,
+            image: 'src/images/beauty 7.jpg',
+            category: 'Beauty & Grooming',
+            name: 'Personalized baby night light | Gift for Baby | baby night light | girl boy bedroom bedside light gift for newborn',
+            price: 'Rs. 699',
+        },
+        {
+            id: 34,
+            image: 'src/images/beauty 5.jpg',
+            category: 'Beauty & Grooming',
+            name: 'Rosense Rose Water Discovery Set- Rose Water Discovery Set- Rose Water Selection 1.7oz | 4 Pack',
+            price: 'Rs. 699',
+        },
+        {
+            id: 35,
+            image: 'src/images/beauty 4.jpg',
+            category: 'Beauty & Grooming',
+            name: '6 Natural Soaps for Women & Men- Handmade Moisturizing Artisan Soap Gift Set with Essential Oils',
+            price: 'Rs. 699',
+        },
+        {
+            id: 36,
+            image: 'src/images/beauty 2.jpg',
+            category: 'Beauty & Grooming',
+            name: 'Personalized baby night light | Gift for Baby | baby night light | girl boy bedroom bedside light gift for newborn',
+            price: 'Rs. 1199',
+        },
+        {
+            id: 37,
+            image: 'src/images/handbags1.jpg',
+            category: 'Handbags & Totes',
+            name: 'Wise Owl Accessories Small Crossbody Bags for Women Real Leather Purse Handbags the Shoulder Pocketbook',
+            price: 'Rs. 399',
+        },
+        {
+            id: 38,
+            image: 'src/images/handbags2.jpg',
+            category: 'Handbags & Totes',
+            name: 'Worlds Strongest Tote Bag, Handmade with Organic Cotton Canvas and Beeswax, Long Straps, Side Handles, Stiff Waxed',
+            price: 'Rs. 1199',
+        },
+        {
+            id: 39,
+            image: 'src/images/handbags3.jpg',
+            category: 'Handbags & Totes',
+            name: 'Tooled leather iPhone 13 14 15 Pro Max purse case with shoulder strap, embossing leather',
+            price: 'Rs. 1199',
+        },
+        {
+            id: 40,
+            image: 'src/images/beauty 2.jpg',
+            category: 'Handbags & Totes',
+            name: 'Personalized baby night light | Gift for Baby | baby night light | girl boy bedroom bedside light gift for newborn',
+            price: 'Rs. 1199',
+        },
+        {
+            id: 41,
+            image: 'src/images/beauty 2.jpg',
+            category: 'Handbags & Totes',
+            name: 'Personalized baby night light | Gift for Baby | baby night light | girl boy bedroom bedside light gift for newborn',
+            price: 'Rs. 1199',
+        },
+        {
+            id: 42,
+            image: 'src/images/handbags7.jpg',
+            category: 'Handbags & Totes',
+            name: 'Personalized baby night light | Gift for Baby | baby night light',
+            price: 'Rs. 399',
+        },
+        {
+            id: 43,
+            image: 'src/images/handbags6.jpg',
+            category: 'Handbags & Totes',
+            name: 'PS PETITE SIMONE Woven Tote Bag for Women Large Woven Purse Woven Leather Handbags Braided Purse Weave Purse',
+            price: 'Rs. 749',
+        },
+        {
+            id: 44,
+            image: 'src/images/handbags5.jpg',
+            category: 'Handbags & Totes',
+            name: 'Create your own Dog Mom Gift Box. Great unique gift for Mothers Day, Birthday, Easter, Christmas, or Just Because',
+            price: 'Rs. 1199',
         },
     ];
 
@@ -160,7 +334,8 @@ const Home = () => {
     };
 
     // Function to toggle cart visibility
-    const toggleCartVisibility = () => {
+    const toggleCartVisibility = (event) => {
+        event.preventDefault();
         setCartVisible(!isCartVisible);
     };
 
@@ -190,7 +365,7 @@ const Home = () => {
                         <li><a href="#product">Featured Products</a></li>
                         <li><a href="/Seller">Seller</a></li>
                         <li>
-                            <a href="#" onClick={toggleDropdownVisibility} className={`dropdown-button ${isDropdownVisible ? 'open' : ''}`}>
+                            <a href="#product" onClick={toggleDropdownVisibility} className={`dropdown-button ${isDropdownVisible ? 'open' : ''}`}>
                                 Shop By Category
                             </a>
                             {/* Dropdown menu */}
@@ -212,12 +387,13 @@ const Home = () => {
                         <li><a href="#">Login</a></li>
                         <li>
                             {/* Cart icon */}
-                            <a href="#" onClick={toggleCartVisibility}>
+                            <a href="#product" onClick={(event) => toggleCartVisibility(event)}>
                                 <FontAwesomeIcon icon={faShoppingCart} />
                                 {cart.length > 0 && (
                                     <span className="cart-count">{cart.length}</span>
                                 )}
                             </a>
+
                         </li>
                     </ul>
                 </div>
@@ -282,6 +458,8 @@ const Home = () => {
                     <p>
                         Total Price: Rs. {cart.reduce((acc, item) => acc + parseFloat(item.price.replace('Rs. ', '')), 0).toFixed(2)}
                     </p>
+                    <a href="#checkout"> 
+                    <button onClick={toggleCartVisibility}>Checkout</button></a>
                 </div>
             )}
 
