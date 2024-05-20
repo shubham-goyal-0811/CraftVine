@@ -4,6 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faShoppingCart, faStar, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
     // State to track items in the cart and cart visibility
@@ -11,6 +12,20 @@ const Home = () => {
     const [isCartVisible, setCartVisible] = useState(false);
     const [isDropdownVisible, setDropdownVisible] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState(null);
+    const bar = document.getElementById('bar');
+    const close = document.getElementById('close');
+    const nav = document.getElementById('navbar');
+
+    if (bar) {
+        bar.addEventListener("click", () => {
+            nav.classList.add('active');
+        })
+    }
+    if (close) {
+        close.addEventListener("click", () => {
+            nav.classList.remove('active');
+        })
+    }
 
     // Example product data
     const products = [
@@ -353,8 +368,8 @@ const Home = () => {
     const filteredProducts = selectedCategory
         ? products.filter((product) => product.category === selectedCategory)
         : products;
-    
-    const { loginWithRedirect ,user, isAuthenticated,logout} = useAuth0();
+
+    const { loginWithRedirect, user, isAuthenticated, logout } = useAuth0();
     return (
         <>
             {/* Header section */}
@@ -362,8 +377,12 @@ const Home = () => {
                 <a href=""><img className='cv-logo' src={'src/images/craftVine-logo-removebg-preview (1).png'} alt="Logo" /></a>
                 <div>
                     <ul id="navbar">
+                    <a href="#" id="close">
+        <FontAwesomeIcon icon={faTimes} className="far fa-tin" />
+    </a>
                         <li><a href="#header" className='active'>Home</a></li>
                         <li><a href="#product">Featured Products</a></li>
+                        
                         <li><a href="/Seller">Seller</a></li>
                         <li>
                             <a href="#product" onClick={toggleDropdownVisibility} className={`dropdown-button ${isDropdownVisible ? 'open' : ''}`}>
@@ -385,7 +404,6 @@ const Home = () => {
                         </li>
                         <li><a href="#editorpicks">Editor's Choice</a></li>
                         <li><a href="#footer">Contact</a></li>
-                        
                         <li>
                             {/* Cart icon */}
                             <a href="#product" onClick={(event) => toggleCartVisibility(event)}>
@@ -396,27 +414,38 @@ const Home = () => {
                             </a>
 
                         </li>
-                        {isAuthenticated || <button className='border-black border-2 rounded-full text-neutral-950 hover:bg-black hover:text-white hover:scale-110' onClick={() => loginWithRedirect()}>Log In</button>}
+                        {isAuthenticated || <button className='border-white border-2 rounded-full text-neutral-950 hover:text-black hover:scale-110 hover:border-white hover:bg-cyan-300' onClick={() => loginWithRedirect()}>Log In</button>}
                         <div className="profile-container flex flex-col justify-center items-center">
-                        {isAuthenticated && (
-                                    <div>
-                                        <img className='w-12 flex items-center justify-center text-center' src={user.picture} alt={user.name} />
-                                        <h2 className='text-neutral-950 ml-0'>{user.name}</h2>
-                                    </div>
-                                    )
-                        }
+                            {isAuthenticated && (
+                                <div>
+                                    <img className='w-12 flex items-center justify-center text-center' src={user.picture} alt={user.name} />
+                                    <h2 className='text-neutral-950 ml-0'>{user.name}</h2>
+                                </div>
+                                
+                            )
+                            }
+                            
                         </div>
                         {
                             isAuthenticated && <button className='border-black border-2 rounded-full text-neutral-950 hover:bg-black hover:text-white hover:scale-110' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                            Log Out
-                          </button>
+                                Log Out
+                            </button>
                         }
                     </ul>
-                    
                 </div>
                 <div id="mobile">
-                    <FontAwesomeIcon icon={faBars} />
+                
+                            {/* Cart icon */}
+                            <a href="#product" onClick={(event) => toggleCartVisibility(event)}>
+                                <FontAwesomeIcon icon={faShoppingCart} />
+                                {cart.length > 0 && (
+                                    <span className="cart-count">{cart.length}</span>
+                                )}
+                            </a>
+                    <FontAwesomeIcon icon={faBars} className="fas fa-outdent" id="bar" />
+
                 </div>
+
             </section>
 
             {/* Discount section */}
@@ -466,7 +495,7 @@ const Home = () => {
                                 <li key={index}>
                                     <span>{item.name} - {item.price}</span>
                                     <button onClick={() => removeFromCart(index)}>
-                                        <FontAwesomeIcon icon={faTrashAlt} /> Remove
+                                        <FontAwesomeIcon icon={faTrashAlt} />
                                     </button>
                                 </li>
                             ))}
@@ -475,8 +504,8 @@ const Home = () => {
                     <p>
                         Total Price: Rs. {cart.reduce((acc, item) => acc + parseFloat(item.price.replace('Rs. ', '')), 0).toFixed(2)}
                     </p>
-                    <a href="#checkout"> 
-                    <button onClick={toggleCartVisibility}>Checkout</button></a>
+                    <a href="#checkout">
+                        <button onClick={toggleCartVisibility}>Checkout</button></a>
                 </div>
             )}
 

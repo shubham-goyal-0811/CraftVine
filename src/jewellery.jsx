@@ -2,12 +2,8 @@ import './jewellery.css';
 const jewellery= ()=>{
    return (
       <>
-        <section id='topsection'>
-         <div>
-            <ul>
-               <li>helo world</li>
-            </ul>
-         </div>
+        <section>
+         <h1>hello world</h1>
         </section>
       </>
    )

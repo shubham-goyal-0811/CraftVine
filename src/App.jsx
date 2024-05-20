@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     <Routes> 
-
+      
     <Route path ="/" Component={ Home}/>
     <Route path ="/jewellery" Component ={ jewellery}/>
     <Route path ="/home_decor" Component ={ home_decor}/>

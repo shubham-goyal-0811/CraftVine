@@ -25,7 +25,7 @@ const CategorySelection = () => {
   return (
     <div>
       <h2>Select categories:</h2>
-      <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 justify-center items-center">
+      <div className="flex flex-col space-y-1 sm:flex-row sm:space-x-2 justify-between">
         {categories.map((category) => (
           <label key={category}>
             <input
