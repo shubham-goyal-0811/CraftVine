@@ -27,6 +27,7 @@ function Contact() {
       });
       const data = await response.json();
       console.log(data);
+      alert("Thankyou For Your Feedback");
     } catch (error) {
       console.error("Error:", error);
     }
