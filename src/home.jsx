@@ -418,12 +418,12 @@ const Home = () => {
                         <div className="profile-container flex flex-col justify-center items-center">
                             {isAuthenticated && (
                                 <div>
-                                    <img className='w-12 flex items-center justify-center text-center' src={user.picture} alt={user.name} />
-                                    <h2 className='text-neutral-950 ml-0'>{user.name}</h2>
+                                    <img className='w-12  mb-2 sm:mb-0 sm:mr-2 flex items-center justify-center text-center rounded-full m-auto' src={user.picture}/>
+                                    {/* <h2 className='text-neutral-950 ml-0'>{user.name}</h2> */}
                                 </div>
-                                
-                            )
-                            }
+
+                                )
+                            }   
                             
                         </div>
                         {
