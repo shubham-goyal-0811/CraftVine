@@ -14,7 +14,7 @@ import toys_and_games from './toys_and_games.jsx';
 import Seller from "./Seller.jsx" ;
 import checkout from './checkout.jsx';
 import Contact from './Contact.jsx';
-import contact from './Contact.jsx';
+// import contact from './Contact.jsx';
 
 function App() {
 
@@ -33,7 +33,11 @@ function App() {
     <Route path ="/toys_and_games" Component ={ toys_and_games}/>
     <Route path ="/Seller" Component ={ Seller}/>
     <Route path ="/checkout" Component={checkout} />
+<<<<<<< HEAD
     <Route path ="/contact" Component={ contact} />
+=======
+    <Route path ="/Contact" Component={Contact} />
+>>>>>>> c7dddff6dbbccc794688f6bad2aaf202b2360293
     </Routes>
     </>
   )

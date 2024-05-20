@@ -417,7 +417,7 @@ const Home = () => {
                         {isAuthenticated || <button className='border-white border-2 rounded-full text-neutral-950 hover:text-black hover:scale-110 hover:border-white hover:bg-cyan-300' onClick={() => loginWithRedirect()}>Log In</button>}
                         <div className="profile-container flex flex-col justify-center items-center">
                             {isAuthenticated && (
-                                <div className=''>
+                                <div>
                                     <img className='w-12  mb-2 sm:mb-0 sm:mr-2 flex items-center justify-center text-center rounded-full m-auto' src={user.picture}/>
                                     {/* <h2 className='text-neutral-950 ml-0'>{user.name}</h2> */}
                                 </div>
