@@ -13,6 +13,8 @@ import toys_and_games from './toys_and_games.jsx';
 
 import Seller from "./Seller.jsx" ;
 import checkout from './checkout.jsx';
+import Contact from './Contact.jsx';
+import contact from './Contact.jsx';
 
 function App() {
 
@@ -30,8 +32,8 @@ function App() {
     <Route path ="/clothing_and_accesories" Component ={ clothing_and_accesories}/>
     <Route path ="/toys_and_games" Component ={ toys_and_games}/>
     <Route path ="/Seller" Component ={ Seller}/>
-    <Route path ="/Seller" component={Seller} />
     <Route path ="/checkout" component={checkout} />
+    <Route path ="/contact" component={ contact} />
     </Routes>
     </>
   )

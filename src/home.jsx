@@ -403,7 +403,7 @@ const Home = () => {
                             )}
                         </li>
                         <li><a href="#editorpicks">Editor's Choice</a></li>
-                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="/Contact">Contact</a></li>
                         <li>
                             {/* Cart icon */}
                             <a href="#product" onClick={(event) => toggleCartVisibility(event)}>
@@ -583,7 +583,7 @@ const Home = () => {
                     <a href="/delivery_info">Delivery Information</a>
                     <a href="/privacy_policy">Privacy Policy</a>
                     <a href="/terms_conditions">Terms & Conditions</a>
-                    <a href="/contact_us">Contact Us</a>
+                    <a href="/Contact">Contact</a>
                 </div>
 
                 <div className='col'>
