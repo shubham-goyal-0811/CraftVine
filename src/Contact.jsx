@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import TeamSection from "./TeamSection";
 function Contact() {
   const [formdata, setData] = useState({
     name: "",
@@ -35,7 +35,9 @@ function Contact() {
   }
 
   return (
-    <div>
+
+    <div className="flex sm:flex-row flex-col">
+      <TeamSection/>
       <form
         className="text-gray-600 body-font relative"
         onSubmit={handleSubmit}
