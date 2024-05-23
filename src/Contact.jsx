@@ -39,7 +39,7 @@ function Contact() {
     <div className="flex sm:flex-row flex-col">
       <TeamSection/>
       <form
-        className="text-gray-600 body-font relative"
+        className="text-gray-600 body-font relative  sm:px-5 sm:py-24 sm:mx-auto"
         onSubmit={handleSubmit}
       >
         <div className="container px-5 py-24 mx-auto">
