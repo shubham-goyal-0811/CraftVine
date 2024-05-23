@@ -61,7 +61,7 @@ html {
 /* landing page css begins */
 #discount {
   height: 90vh;
-  background-image: linear-gradient(90deg, rgba(12, 12, 12, 0.6) 10%, hsla(60, 100%, 1%, 0.5)100%), url('src/images/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
+  background-image: linear-gradient(90deg, rgba(12, 12, 12, 0.6) 10%, hsla(60, 100%, 1%, 0.5)100%), url('src/assets/e-commerce-1920-x-1080-wallpaper-tb4uqckgoo0883zw.jpg');
   background-size: cover; /* Ensures the image covers the entire section */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Centers the image within the section */
@@ -100,7 +100,7 @@ html {
   margin-bottom: 1px;
 }
 #discount button{
-  background-image: url('src/images/button.png');
+  background-image: url('src/assets/button.png');
   background-color:transparent;
   color:aqua;
   border: 0px;
@@ -267,40 +267,40 @@ section{
   
 }
 .boxs:first-child{
-  background-image: url('src/images/jewellery.jpg');
+  background-image: url('src/assets/jewellery.jpg');
   background-size: cover;
 }
 .boxs:nth-child(2){
-  background-image: url('src/images/home decor.jpg');
+  background-image: url('src/assets/home decor.jpg');
   background-size: cover;
 }
 .boxs:nth-child(3){
-  background-image: url('src/images/kitchen and dinning.jpg');
+  background-image: url('src/assets/kitchen and dinning.jpg');
   background-size: cover;
 }
 .boxs:nth-child(4){
-  background-image: url('src/images/beauty and grooming.jpg');
+  background-image: url('src/assets/beauty and grooming.jpg');
   background-size: cover;
 }
 
 .boxs:nth-child(5){
-  background-image: url('src/images/handbags and totes.jpg');
+  background-image: url('src/assets/handbags and totes.jpg');
   background-size: cover;
 }
 .boxs:nth-child(6){
-  background-image: url('src/images/stationary and party.jpg');
+  background-image: url('src/assets/stationary and party.jpg');
   background-size: cover;
 }
 .boxs:nth-child(7){
-  background-image: url('src/images/clothing and accesrories.jpg');
+  background-image: url('src/assets/clothing and accesrories.jpg');
   background-size: cover;
 }
 .boxs:nth-child(8){
-  background-image: url('src/images/toys and games.jpg');
+  background-image: url('src/assets/toys and games.jpg');
   background-size: cover;
 }
 .boxs:nth-child(10){
-  background-image: url('src/images/baby.jpg');
+  background-image: url('src/assets/baby.jpg');
   background-size: cover;
 }
 .boxs:hover{
@@ -347,21 +347,21 @@ section{
 .arrival{
   height: 550px;
   width: 400px;
-  background-image: url('src/images/new arrival.jpg');
+  background-image: url('src/assets/new arrival.jpg');
   background-size: cover;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .bestseller{
   height: 550px;
   width: 400px;
-  background-image: url('src/images/best seller.jpg');
+  background-image: url('src/assets/best seller.jpg');
   background-size: cover;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .madeinusa{
   height: 550px;
   width: 400px;
-  background-image: url('src/images/made in usa.jpg');
+  background-image: url('src/assets/made in usa.jpg');
   background-size: cover;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -400,7 +400,7 @@ section{
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("src/images/Deep Ocean Dark Teal Printed Solid.jpg");
+  background-image: url("src/assets/Deep Ocean Dark Teal Printed Solid.jpg");
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: rgb(12, 67, 67);
